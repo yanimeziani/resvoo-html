@@ -1,0 +1,312 @@
+// section-two-start
+.section-two{
+background-image: url("../images/section-two-bg.png");
+// height: 1000px;
+background-size: cover;;
+
+ .mer-box{
+
+    @include margin(top,-80px,111,white,8px){
+    box-shadow: 4px -6px 10px 1px rgba(0, 0, 0, 0.25);
+    }
+    .merchant-txt{
+        width: 90%;
+        margin: auto;
+        .small-txt{
+            @extend %small-txt;
+        }
+    .mer-img{
+        width: 40%;
+        @media screen and (max-width:575px){
+            width: 90%;
+            }
+        img{
+            width: 220px;
+        }
+    }
+    .mer-btn{
+        width: 40%;
+        @media screen and (min-width:768px) and (max-width:880px){
+        width: 50%;
+        }
+        @media screen and (max-width:760px){
+            width: 60%;
+            }
+            @media screen and (max-width:575px){
+                width: 90%;
+                }
+        
+        .h-search-input{
+            min-width: 160px;
+            @include head-search-input($second-color);
+          @media screen and (max-width:992px){
+              padding-left:15px ;
+          }
+            &::placeholder {
+                color: white;
+            }
+       
+             }
+      .mer-search{
+          position: absolute;
+          line-height: 50px;
+          margin-left: -30px;
+          color: white;
+      }
+    }
+    }
+ }
+//  red-box-code-start
+ .red-img-box{
+     .search-eng-img{
+    @include margin(top,-220px,111,$third-color,8px){
+        box-shadow: -8px 6px 15px rgba(0, 0, 0, 0.15);
+        }
+        @media screen and (max-width:768px) {
+            margin-top: -40px;
+        }
+     }
+ }
+//  red-box-code-start
+// promise section start
+.promise-sec{
+    .small-txt{
+        @extend %small-txt;
+    }
+}
+
+}
+
+// section-two-end
+
+// third-section-start
+.third-sec{
+    background:$slider-sec-bg;
+    .service-sec{
+        .small-txt{
+            @extend %small-txt;
+        }
+.slider-service{
+    .carousel {
+        background:$slider-sec-bg;
+    
+      
+      .carousel-cell {
+        width: 25%;
+        height: 300px;
+        margin:0px 10px;
+        border-radius: 8px;
+        box-shadow: 4px 6px 10px 1px rgba(0, 0, 0, 0.25);
+        button{
+            @include button(100%,80px,0px 0px 8px 8px,rgba(229, 9, 20, 0.85),white,80px){
+                font-size:18px;
+                border: none;
+                outline: none;
+            }
+        }
+      }
+      .carousel-cell.is-selected {
+        background:darken($color: $slider-sec-bg, $amount: 5);
+      }
+      
+      /* cell number */
+      .carousel-cell:before {
+        display: block;
+      }
+    } 
+
+}
+    }
+}
+// third-section-End
+
+// fourth-box-start
+.section-four{
+    background: #F5F5F5;
+     .about-box{
+    
+        @include margin(top,80px,111,white,8px){
+        box-shadow: 4px -6px 10px 1px rgba(0, 0, 0, 0.25);
+        height: 500px;
+        @media screen and (max-width:768px){
+            height: 700px;
+        }
+        }
+        .about-txt{
+            width: 90%;
+            margin: auto;
+            .small-txt{
+                @extend %small-txt;
+            }
+    
+        }
+     }
+     .about-cards{
+         .card-row{
+            @media screen and (max-width:768px){
+                margin-top: -550px;
+                }
+             .cards{
+                @include margin(top,-260px,111,$about-card-color,8px){
+                    box-shadow: -8px 6px 15px rgba(0, 0, 0, 0.15);
+                }
+                @media screen and (max-width:768px){
+                    margin-top: 0px;
+                    }
+             .start{
+                 .checked{
+                     color: orange;
+                 }
+             }
+             p{
+                color: gray;
+                &:hover{
+                    color: black;
+                }
+            }
+        
+         .profile-img{
+             img{
+                 width: 60px;
+                 height: 60px;
+             }
+             .profile-txt{
+                 margin: 0px 0px 0px 20px;
+                 color: gray;
+                 &:hover{
+                     color: black;
+                 }
+             }
+         }
+        }
+        .angle-icon{
+            margin-top: -260px;
+            @media screen and (max-width:768px){
+            margin-top: 0px;
+            }
+            button{
+                @include button(50px,50px,100%,$third-color,white,50px){
+                    outline: none;
+                    border: none;
+                    z-index: 2222;
+                }
+                @media screen and (max-width:650px){
+                    @include button(30px,30px,100%,$third-color,white,30px);
+                }
+            }
+        }
+     }
+    }
+}
+// fourth-box-End
+
+// Five section start
+.five-section{
+    background-image: url(../images/join-us.png);
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    @media screen and (max-width:768px){
+    background-image: url(../images/768-join-us.png);
+    }
+    @media screen and (max-width:400px){
+        background-image: url(../images/400-join-us.png);
+        }
+    .img-sec{
+        width: 50%;
+        background-color: $join-us-bg;
+        @media screen and (max-width:768px){
+            width: 90%;
+        background-color: transparent;
+
+        }
+    }
+    .txt-sec{
+      width: 50%;
+      @media screen and (max-width:768px){
+        width: 100%;
+    }
+        .text{
+            width:50%;
+            color: white;
+            button{
+                @include button(auto,50px,1000px,white,$third-color,50px){
+                    padding: 0px 70px;
+                    border: none;
+                    outline: none;
+                }
+                @media screen and(max-width:576px){
+                @include button(auto,30px,1000px,white,$third-color,30px){
+                    padding: 0px 50px;
+                }
+                }
+            }
+        }
+    }
+}
+// Five section End
+
+// six section start
+.section-six{
+    margin-top: -60px;
+    z-index: 1111;
+    .join-sec{
+        background-color: $footer-color;
+        p{
+            width: 45%;
+            @media screen and(max-width:576px){
+                width: 90%;
+            }
+            color: lighten($color: #000000, $amount: 100);
+        }
+      
+            .join-btn{
+                width: 210px;
+                display: flex;
+                background-color: $third-color;
+                height: 40px;
+                @media screen and (max-width:450px) {
+                    height: 30px;
+                    width: 200px;
+                        }
+                        @media screen and (max-width:450px) {
+                            width: 150px;
+                                }
+                button{
+                
+                    @include button(80%,40px,5px,$third-color,white,40px){
+                        font-size: 12px;
+                        border: none;  
+                    }
+                    @media screen and (max-width:450px) {
+                        @include button(80%,30px,5px,$third-color,white,30px){
+                            font-size: 2.5vw;
+                        }
+                            }
+                }
+                figure{
+                    width: 20%;
+                    clip-path: polygon(36% 0, 100% 0%, 100% 99%, 0% 100%);
+                    background: #B91A22;
+                    height: 40px;
+                    @media screen and (max-width:450px) {
+                        height: 30px;
+                            }
+                    i{
+                        line-height: 40px;
+                        margin-left: 20px;
+                        color: white;
+                        font-size: 12px;
+                        @media screen and (max-width:450px) {
+                            height: 30px;
+                            font-size: 10px;
+                            line-height: 30px;
+                            margin-left: 15px;
+                                }
+                    }
+                }
+            } 
+    }
+}
+
+// six section end

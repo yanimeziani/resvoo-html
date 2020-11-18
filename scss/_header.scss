@@ -1,0 +1,207 @@
+header{
+    @extend %header-size;
+    position: relative;
+    @media screen and(max-width:992px){
+            height:550px
+    }
+    @media screen and (max-width:550px) {
+        height: 530px;
+    }
+    @media screen and (max-width:500px) {
+       height: 450px;
+       }
+    // background code start
+    .bg-sec{
+        @include header-div-size(100%,100%){
+            position: absolute;  
+            display: flex;
+            clip-path: ellipse(50% 100% at 0% 77%);
+            background-color: $primary-color;
+            @media screen and(max-width:768px){
+                clip-path: ellipse(61% 87% at 26% 76%);
+            }
+        }
+    }
+    // background code End
+// top section start
+    .top-sec{
+        @include header-div-size(100%,100%){
+            position: absolute;  
+         z-index: 111;
+        } 
+        // logo section start
+        .logo-sec{
+            img{
+           @media screen and (max-width:450px) {
+            height: 30px;
+            width: 100px;
+           }
+            }
+        }
+        // logo section End
+
+        // top button code start
+        .top-btn{
+            width: 210px;
+            display: flex;
+            background-color: $third-color;
+            height: 40px;
+            @media screen and (max-width:450px) {
+                height: 30px;
+                width: 200px;
+                    }
+                    @media screen and (max-width:450px) {
+                        width: 150px;
+                            }
+            button{
+            
+                @include button(80%,40px,5px,$third-color,white,40px){
+                    font-size: 12px;
+                    border: none;  
+                }
+                @media screen and (max-width:450px) {
+                    @include button(80%,30px,5px,$third-color,white,30px){
+                        font-size: 2.5vw;
+                    }
+                        }
+            }
+            figure{
+                width: 20%;
+                clip-path: polygon(36% 0, 100% 0%, 100% 99%, 0% 100%);
+                background: #B91A22;
+                height: 40px;
+                @media screen and (max-width:450px) {
+                    height: 30px;
+                        }
+                i{
+                    line-height: 40px;
+                    margin-left: 20px;
+                    color: white;
+                    font-size: 12px;
+                    @media screen and (max-width:450px) {
+                        height: 30px;
+                        font-size: 10px;
+                        line-height: 30px;
+                        margin-left: 15px;
+                            }
+                }
+            }
+        } 
+        // top button code End
+        // navbar code start
+        nav{
+            border-radius: 8px;
+            background-color: $nav-bg;
+            .nav-btn{
+                @include button(100px,40px,1000px,auto,white,auto);
+                @media screen and (max-width:450px){
+                    @include button(90px,30px,1000px,auto,white,auto){
+                        font-size: 12px;
+                    }   
+                }
+            }
+            .nav-btn-1{
+                background-color: $second-color;
+            }
+            .nav-btn-2{
+                background-color: $third-color;
+            }
+            .navbar-toggler{
+              border: 1px solid white;
+              color: white !important;
+            }
+            a{
+                @media screen and (max-width:992px){
+                    font-size: 14px;
+                    padding:0px;
+                }
+            }
+        }
+        // navbar code End
+// head text & img code start
+          .h-txt-img{
+              h1{
+                  color: lighten($color: #000000, $amount: 100);
+                  @media screen and (max-width:992px) {
+                      font-size: 30px;
+                  }
+                  @media screen and (max-width:576px) {
+                    font-size: 20px;
+                }
+                @media screen and (max-width:500px) {
+                 display: none;
+                }
+              }
+              .head-form{
+                @media screen and (max-width:500px) {
+                   margin-top: 10px;
+                   } 
+              }
+     .h-service-input{
+    @include head-search-input(white);
+    @media screen and (max-width:992px) {
+       height: 35px;
+    }
+    @media screen and (max-width:576px) {
+        border: 1px solid gray;
+     }
+     }
+     .h-search-input{
+        @include head-search-input($second-color);
+        &::placeholder {
+            color: white;
+        }
+        @media screen and (max-width:992px) {
+            height: 35px;
+         }
+         }
+     .search-one{
+         position: absolute;
+         line-height: 50px;
+         margin-left: 20px;
+         color: gray;
+         @media screen and (max-width:992px) {
+         line-height: 35px;
+         }
+     }
+     .search-two{
+         @extend .search-one;
+         margin-left: -30px;
+         color: white;
+         @media screen and (max-width:992px) {
+            line-height: 35px;
+            }
+     }
+ 
+             .header-house-img{
+               margin-top: -60px;
+               margin-left: 60px;
+               @media screen and (max-width:992px) {
+                margin-left: 0px;
+               margin-top: -30px;
+
+             }
+             }
+.pop{
+    @media screen and (max-width:414px) {
+    font-size: 13px;
+        }
+    
+}
+             .popular-service{
+                button{
+                    @extend %head-btn;
+                    @media screen and (max-width:500px) {
+                        padding:2px 10px;
+                        font-size: 11px;
+                       }
+                    
+                }
+            
+            }
+}
+// head text & img code End
+
+    }
+    // top section code end
+}

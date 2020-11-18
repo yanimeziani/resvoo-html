@@ -1,0 +1,51 @@
+// header-div-size-mixin
+@mixin header-div-size($width,$height) {
+    width: $width;
+    height: $height;
+    @content;
+}
+// Button mixin
+@mixin button($width,$height,$b-radius,$b-color,$color,$l-height) {
+    width: $width;
+    height: $height;
+    border-radius: $b-radius;
+    background-color: $b-color;
+    color: $color;
+    line-height: $l-height;
+    @content;
+}
+
+// Header-search-input
+@mixin head-search-input($color){
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 1000px;
+    @if $color==white {
+        padding-left: 50px;
+    background-color: $color;
+    }@else if $color==$second-color{
+        padding-left: 20px;
+    background-color: $color;
+    }
+    @content;
+}
+
+// mixin for minus top margin
+@mixin margin($direction,$value,$z-index,$bg-color,$b-radius){
+    margin-#{$direction}:$value;
+    z-index: $z-index;
+    background-color:$bg-color;
+    border-radius: $b-radius;
+    @content;
+}
+// input placeholder text overflow mixin
+// @mixin text-overflow {
+//     white-space: nowrap;
+//     overflow: hidden;
+//     text-overflow: ellipsis;
+//     @content;
+// }
+
+

@@ -1,0 +1,44 @@
+footer{
+    margin-top: 80px;
+    .logo,.ul-1,.ul-2,form{
+        width: 20%;
+    }
+    .logo{
+        p{
+            color: gray;
+        }
+    }
+    ul{
+        list-style: none;
+        li{
+            font-weight: bold;
+            color: #4B4B4B;
+        }
+    }
+    form{
+        p{
+            color: gray;
+        }
+        input{
+            @include button(100%,50px,4px,transparent,gray,50px){
+                padding-left: 20px;
+          outline: none;
+            }
+        }
+    }
+    .footer-term{
+        background-color: $footer-color;
+        .social-icon{
+            width: 30%;
+            a{
+                margin: 5px 10px;
+                text-decoration: none;
+                font-size: 20px;
+                color: $footer-icon;
+            }
+        }
+        small{
+            color: gray;
+        }
+    }
+}

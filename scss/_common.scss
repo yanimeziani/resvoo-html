@@ -1,0 +1,28 @@
+html{
+    font-size: 100%;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@media screen and(max-width:1200px){
+    html{
+        font-size: 85%;
+    }
+}
+@media screen and(max-width:992px){
+    html{
+        font-size: 80%;
+    }
+}
+@media screen and(max-width:768px){
+    html{
+        font-size: 70%;
+    }
+}
+// @media screen and(max-width:600px){
+//     html{
+//         font-size: 40%;
+//     }
+// }
