@@ -41,32 +41,52 @@
           <div class="container-fluid">
             <div class="d-lg-none">
             <!-- button display when screen size is less than 992px -->
-              <button class="btn  nav-btn nav-btn-1" type="submit">Login</button>
-              <button class="btn  nav-btn nav-btn-2" type="submit">Sign up</button>
+              <button class="btn  nav-btn nav-btn-1" type="submit" data-toggle="modal" data-target="#exampleModal">Login</button>
+              <button class="btn  nav-btn nav-btn-2" type="submit" data-toggle="modal" data-target="#signupModel">Sign up</button>
+      <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
             </div>
-
+     
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
               <span class="fa fa-bars"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
                 <li class="nav-item pl-3 pr-3">
-                  <a class="nav-link text-light"  href="#">Home</a>
+                  <a class="nav-link"  href="#">Home</a>
                 </li>
                 <li class="nav-item pl-3 pr-3">
-                  <a class="nav-link text-light" href="#">Services</a>
+                  <a class="nav-link" href="#">Services</a>
                 </li>
                 <li class="nav-item pl-3 pr-3">
-                  <a class="nav-link text-light" href="#">Our Experts</a>
+                  <a class="nav-link" href="#">Our Experts</a>
                 </li>
                 <li class="nav-item pl-3 pr-3">
-                  <a class="nav-link text-light" href="#">Contact</a>
+                  <a class="nav-link" href="#">Contact</a>
                 </li>
                 <li class="nav-item pl-3 pr-3">
-                  <a class="nav-link text-light" href="#">FAQs</a>
+                  <a class="nav-link" href="#">FAQs</a>
                 </li>
                 <li class="nav-item pl-3 pr-3">
-                  <a class="nav-link text-light" href="#">Our Integration</a>
+                  <a class="nav-link" href="#">Our Integration</a>
                 </li>
               </ul>
               <form class="d-flex d-none d-lg-block">
@@ -106,7 +126,7 @@
                 <div class="col-12 col-lg-11  d-flex">
                   <div class="row">
                     <div class="col-3 col-sm-2 ">
-              <h6 class="text-white pop">Popular:</h6>
+              <h6 class="pop">Popular:</h6>
                     </div>
                   
                   <div class="col-9 popular-service">
@@ -141,25 +161,12 @@
     <div class="merchant-box">
       <div class="row">
         <div class="col-md-1 col-1"></div>
-        <div class="col-md-7 col-10  mer-box">
+        <div class="col-md-7 col-10  mer-box pb-5">
 <div class="merchant-txt  mt-5">
   <div style="display: flex; align-items: center;"> <i class="	fa fa-angle-left" style="color: #D2495A;"></i> <i class="	fa fa-angle-right" style="font-size: 30px;margin-left: -3px;color: gray;"></i> <span style="margin-left: 30px;" class="small-txt">WHAT WE DO</span> </div>
   <h1>All the merchants you love,all<br>in one place</h1>
   <p style="width: 70%;">Lorem ipsum dolor sit amet cvel optio, ullam odio. At temporibus voluptates iste, ducimus modi voluptas dignissimos error fugiat ut soluta nihil odio, rem nulla, eaque similique?</p>
-  <!-- img & button sec start-->
-  <div class="mer-img-btn  d-flex flex-sm-row flex-column align-items-center mb-5">
-    <div class="mer-img p-lg-0 p-3">
-      <img src="images/calendar 1.png" alt="" class="img-fluid">
-    </div>
-    <div class="mer-btn  d-flex flex-column  align-items-sm-end p-3 mb-5">
-      <p>Lorem, ipsum dolor sit amet consectetur adip distinctio molestias esse iure!</p>
-      <div class="has-search ">
-        <input type="text" placeholder="Find the merchants" class="h-search-input">
-        <span class="fa fa-search mer-search"></span>
-      </div>
-    </div>
-  </div>
-  <!-- img & button sec start-->
+
 </div>
         </div>
         <div class="col-md-4 col-1"></div>
@@ -174,7 +181,7 @@
       <div class="row">
         <div class="col-md-7 col-sm-5 col-3"></div>
         <div class="col-md-4 col-sm-5 col-6 search-eng-img p-5">
-          <img src="images/Search engines-bro 1.png" alt="" class="img-fluid">
+          <img src="images/Search engines-bro.png" alt="" class="img-fluid">
         </div>
         <div class="col-md-1 col-sm-2 col-3"></div>
       </div>
@@ -222,58 +229,66 @@
 <section class="third-sec">
   <div class="service-sec container-fluid ">
 <div class="row">
-  <div class="col-lg-1"></div>
-  <div class="col-lg-10" style="margin-top: 100px;">
+  <div class="col-1"></div>
+  <div class="col-10" style="margin-top: 100px;">
     <!-- services-headings-start -->
     <div class="mt-5" style="display: flex; align-items: center;"> <i class="	fa fa-angle-left" style="color: #D2495A;"></i> <i class="	fa fa-angle-right" style="font-size: 30px;margin-left: -3px;color: gray;"></i> <span style="margin-left: 30px;" class="small-txt">OUR SERVICES</span> </div>
-    <h1 class="mb-5 text-white">Popular Services We Provide</h1>
+    <h1 class="mb-5">Popular Services We Provide</h1>
     <!-- services-headings-End -->
 
 
 
   </div>
-  <div class="col-lg-1"></div>
+  <div class="col-1"></div>
 </div>
 <div class="row">
-  <div class="container">
+  <div class="container mb-5">
     <!-- Services-slider-part-start -->
     <div class="slider-service mb-5">
       <!-- Flickity HTML init -->
-    <div class="carousel mt-5 mb-2" data-flickity='{ "groupCells": true }'>
-      <div class="carousel-cell d-flex flex-column justify-content-between">
-        <img src="images/fitness 1.png" alt="" class="img-fluid m-auto" width="160px">
+    <div class="carousel mt-5 mb-5" data-flickity='{ "groupCells": true }'>
+
+      <div class="carousel-cell">
+        <div class="cell-img d-flex justify-content-center mt-2" >
+          <img src="images/Electrician-amico 1.png" alt="" class="img-fluid m-auto" width="300px" height="300px">
+        </div>
         <button>Electrition</button>
       </div>
-      <div class="carousel-cell d-flex flex-column justify-content-between">
-        <img src="images/fitness 1.png" alt="" class="img-fluid m-auto" width="160px">
+
+      <div class="carousel-cell">
+        <div class="cell-img d-flex justify-content-center mt-2" >
+          <img src="images/Gardening-pana 1.png" alt="" class="img-fluid m-auto" width="300px" height="300px">
+        </div>
         <button>Electrition</button>
       </div>
-      <div class="carousel-cell d-flex flex-column justify-content-between">
-        <img src="images/car 1.png" alt="" class="img-fluid m-auto" width="160px">
+      <div class="carousel-cell">
+        <div class="cell-img d-flex justify-content-center mt-2" >
+          <img src="images/Woodworker-amico 1.png" alt="" class="img-fluid m-auto" width="300px" height="300px">
+        </div>
         <button>Electrition</button>
       </div>
-      <div class="carousel-cell d-flex flex-column justify-content-between">
-        <img src="images/fitness 1.png" alt="" class="img-fluid m-auto" width="160px">
+      <div class="carousel-cell">
+        <div class="cell-img d-flex justify-content-center mt-2" >
+          <img src="images/Electrician-amico 1.png" alt="" class="img-fluid m-auto" width="300px" height="300px">
+        </div>
         <button>Electrition</button>
       </div>
-      <div class="carousel-cell d-flex flex-column justify-content-between">
-        <img src="images/fitness 1.png" alt="" class="img-fluid m-auto" width="160px">
+      <div class="carousel-cell">
+        <div class="cell-img d-flex justify-content-center mt-2" >
+          <img src="images/Electrician-amico 1.png" alt="" class="img-fluid m-auto" width="300px" height="300px">
+        </div>
         <button>Electrition</button>
       </div>
-      <div class="carousel-cell d-flex flex-column justify-content-between">
-        <img src="images/fitness 1.png" alt="" class="img-fluid m-auto" width="160px">
+      <div class="carousel-cell">
+        <div class="cell-img d-flex justify-content-center mt-2" >
+          <img src="images/Electrician-amico 1.png" alt="" class="img-fluid m-auto" width="300px" height="300px">
+        </div>
         <button>Electrition</button>
       </div>
-      <div class="carousel-cell d-flex flex-column justify-content-between">
-        <img src="images/fitness 1.png" alt="" class="img-fluid m-auto" width="160px">
-        <button>Electrition</button>
-      </div>
-      <div class="carousel-cell d-flex flex-column justify-content-between">
-        <img src="images/fitness 1.png" alt="" class="img-fluid m-auto" width="160px">
-        <button>Electrition</button>
-      </div>
-      <div class="carousel-cell d-flex flex-column justify-content-between">
-        <img src="images/fitness 1.png" alt="" class="img-fluid m-auto" width="160px">
+      <div class="carousel-cell">
+        <div class="cell-img d-flex justify-content-center mt-2" >
+          <img src="images/Electrician-amico 1.png" alt="" class="img-fluid m-auto" width="300px" height="300px">
+        </div>
         <button>Electrition</button>
       </div>
      
@@ -308,7 +323,55 @@
 
   <div class="container-fluid">
     <div class="about-cards ">
-      <div class="row mb-5 card-row d-flex justify-content-center">
+      <!-- about-card-slider-start -->
+          
+    <div class="carousel" data-flickity='{ "groupCells": true }'>
+
+      <div class="carousel-cell">
+        <div class="p-5 cards">
+          <div class="start mb-5">
+            <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique accusantium dolore voluptatem hic atque sed eos necessitatibus eveniet vitae ullam repellat, enim facilis dignissimos molestiae!</p>
+          <div class="profile-img d-flex mt-5">
+            <img src="images/Ellipse (1).png" alt="" width="60px" height="60px">
+            <div class="profile-txt ml-2">
+              <h6>Sally Ann</h6>
+              <p>CEO at Coca Cola</p>
+            </div>
+          </div>
+          </div>
+      </div>
+
+      <div class="carousel-cell">
+        <div class="p-5 cards">
+          <div class="start mb-5">
+            <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique accusantium dolore voluptatem hic atque sed eos necessitatibus eveniet vitae ullam repellat, enim facilis dignissimos molestiae!</p>
+          <div class="profile-img d-flex mt-5">
+            <img src="images/Ellipse (1).png" alt="" width="60px" height="60px">
+            <div class="profile-txt ml-2">
+              <h6>Sally Ann</h6>
+              <p>CEO at Coca Cola</p>
+            </div>
+          </div>
+          </div>
+      </div>
+  
+     
+    </div>
+      <!-- about-card-slider-end -->
+
+      <!-- <div class="row mb-5 card-row d-flex justify-content-center">
 <div class="col-md-2 col-1"></div>
 <div class="col-md-4 col-8  p-5 cards ml-md-5 mb-5 mb-md-0">
 <div class="start mb-5">
@@ -349,7 +412,7 @@
   <button class="fa fa-angle-right"></button>
 </div>
 
-      </div>
+      </div> -->
     </div>
   </div>
 
@@ -394,12 +457,13 @@
 
 <!-- footer start -->
 <footer>
-  <div class="container-fluid footer-manu d-flex  justify-content-around mb-5">
+  <div class="container-fluid footer-manu d-flex justify-content-sm-around align-items-center flex-column flex-sm-row mb-5">
   <!-- logo-section -->
 <div class="logo">
-  <img src="images/logo 2.png" alt="">
+  <img src="images/logo 2.png" alt="" class="img-fluid">
   <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aperiam animi magni sit delectus magnam quas atque nemo cupiditate repudiandae.</p>
 </div>
+<hr style="width: 70%;" class="d-block d-sm-none">
 <!-- first footer manu -->
 <div class="ul-1">
   <h6 class="ml-4">Explore Link</h6>
@@ -410,6 +474,8 @@
     <li>Estimates</li>
   </ul>
 </div>
+<hr style="width: 70%;" class="d-block d-sm-none">
+
 <!--second footer manu -->
 <div class="ul-2">
   <ul class="mt-5">
@@ -419,16 +485,17 @@
     <li>FAQs</li>
   </ul>
 </div>
+<hr style="width: 70%;" class="d-block d-sm-none">
  <!-- form sec -->
  <form action="">
-  <h5>STAY UP YO DATE</h5>
+  <h5>STAY UP TO DATE</h5>
   <p class="mt-3">Subsuscribe to our newsletter</p>
   <input type="text" placeholder="EMAIL">
 </form>
 
 </div>
 
-<div class=" pt-3 pb-3 footer-term d-flex align-items-center justify-content-around" >
+<div class=" pt-3 pb-3 footer-term d-flex align-items-center justify-content-around flex-column flex-sm-row text-center text-sm-left" >
   <div class="social-icon">
     <a href="#" class="fa fa-facebook"></a>
     <a href="#" class="fa fa-twitter"></a>

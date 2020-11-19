@@ -25,7 +25,7 @@
     @if $color==white {
         padding-left: 50px;
     background-color: $color;
-    }@else if $color==$second-color{
+    }@else if $color==$head-input-bg{
         padding-left: 20px;
     background-color: $color;
     }
@@ -40,12 +40,10 @@
     border-radius: $b-radius;
     @content;
 }
-// input placeholder text overflow mixin
-// @mixin text-overflow {
-//     white-space: nowrap;
-//     overflow: hidden;
-//     text-overflow: ellipsis;
-//     @content;
-// }
+// hover mixin
+@mixin hover($color,$bg-color){
+color: $color;
+background-color: $bg-color;
+}
 
 

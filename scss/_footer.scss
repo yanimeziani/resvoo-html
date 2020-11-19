@@ -2,6 +2,9 @@ footer{
     margin-top: 80px;
     .logo,.ul-1,.ul-2,form{
         width: 20%;
+        @media screen and(max-width:576px){
+            width: 80%;
+        }
     }
     .logo{
         p{
@@ -30,6 +33,9 @@ footer{
         background-color: $footer-color;
         .social-icon{
             width: 30%;
+            @media screen and(max-width:576px){
+                width: 100%;
+            }
             a{
                 margin: 5px 10px;
                 text-decoration: none;

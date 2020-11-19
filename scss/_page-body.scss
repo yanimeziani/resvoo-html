@@ -5,7 +5,10 @@ background-image: url("../images/section-two-bg.png");
 background-size: cover;;
 
  .mer-box{
-
+height: 450px;
+@media screen and (max-width:768px){
+    height: auto;
+}
     @include margin(top,-80px,111,white,8px){
     box-shadow: 4px -6px 10px 1px rgba(0, 0, 0, 0.25);
     }
@@ -15,51 +18,13 @@ background-size: cover;;
         .small-txt{
             @extend %small-txt;
         }
-    .mer-img{
-        width: 40%;
-        @media screen and (max-width:575px){
-            width: 90%;
-            }
-        img{
-            width: 220px;
-        }
-    }
-    .mer-btn{
-        width: 40%;
-        @media screen and (min-width:768px) and (max-width:880px){
-        width: 50%;
-        }
-        @media screen and (max-width:760px){
-            width: 60%;
-            }
-            @media screen and (max-width:575px){
-                width: 90%;
-                }
-        
-        .h-search-input{
-            min-width: 160px;
-            @include head-search-input($second-color);
-          @media screen and (max-width:992px){
-              padding-left:15px ;
-          }
-            &::placeholder {
-                color: white;
-            }
-       
-             }
-      .mer-search{
-          position: absolute;
-          line-height: 50px;
-          margin-left: -30px;
-          color: white;
-      }
-    }
+
     }
  }
 //  red-box-code-start
  .red-img-box{
      .search-eng-img{
-    @include margin(top,-220px,111,$third-color,8px){
+    @include margin(top,-220px,111,$primary-color,8px){
         box-shadow: -8px 6px 15px rgba(0, 0, 0, 0.15);
         }
         @media screen and (max-width:768px) {
@@ -70,6 +35,9 @@ background-size: cover;;
 //  red-box-code-start
 // promise section start
 .promise-sec{
+    h6{
+        color: $text-color;
+    }
     .small-txt{
         @extend %small-txt;
     }
@@ -81,32 +49,42 @@ background-size: cover;;
 
 // third-section-start
 .third-sec{
-    background:$slider-sec-bg;
+    background-image: url(../images/section-three-bg.png);
+    background-size: cover;
     .service-sec{
+        h1{
+            color: $head-input-bg;
+        }
         .small-txt{
             @extend %small-txt;
+            color: white;
         }
 .slider-service{
     .carousel {
-        background:$slider-sec-bg;
     
-      
       .carousel-cell {
         width: 25%;
-        height: 300px;
+        @media screen and(max-width:992px){
+            width: 40%;
+        }
+        @media screen and(max-width:576px){
+            width: 90%;
+        }
+    
         margin:0px 10px;
         border-radius: 8px;
         box-shadow: 4px 6px 10px 1px rgba(0, 0, 0, 0.25);
         button{
-            @include button(100%,80px,0px 0px 8px 8px,rgba(229, 9, 20, 0.85),white,80px){
+            @include button(100%,80px,0px 0px 8px 8px,$slider-btn-bg,white,80px){
                 font-size:18px;
                 border: none;
                 outline: none;
+                margin-top: -30px;
             }
         }
       }
       .carousel-cell.is-selected {
-        background:darken($color: $slider-sec-bg, $amount: 5);
+        background:$slider-bg;
       }
       
       /* cell number */
@@ -122,14 +100,15 @@ background-size: cover;;
 
 // fourth-box-start
 .section-four{
-    background: #F5F5F5;
+background-image: url(../images/section-four-bg.png);
+background-size: cover;
      .about-box{
     
         @include margin(top,80px,111,white,8px){
         box-shadow: 4px -6px 10px 1px rgba(0, 0, 0, 0.25);
         height: 500px;
-        @media screen and (max-width:768px){
-            height: 700px;
+        @media screen and (max-width:992px){
+            height: 400px;
         }
         }
         .about-txt{
@@ -142,60 +121,38 @@ background-size: cover;;
         }
      }
      .about-cards{
-         .card-row{
-            @media screen and (max-width:768px){
-                margin-top: -550px;
-                }
-             .cards{
-                @include margin(top,-260px,111,$about-card-color,8px){
-                    box-shadow: -8px 6px 15px rgba(0, 0, 0, 0.15);
-                }
-                @media screen and (max-width:768px){
-                    margin-top: 0px;
-                    }
-             .start{
-                 .checked{
-                     color: orange;
-                 }
-             }
-             p{
-                color: gray;
-                &:hover{
-                    color: black;
-                }
+        .carousel {
+    margin-top: -300px;
+    @media screen and (max-width:992px){
+        margin-top: -200px;
+    }
+    z-index: 2222;
+            .carousel-cell {
+              width: 30%;
+              @media screen and(max-width:992px){
+                width: 40%;
             }
-        
-         .profile-img{
-             img{
-                 width: 60px;
-                 height: 60px;
-             }
-             .profile-txt{
-                 margin: 0px 0px 0px 20px;
-                 color: gray;
-                 &:hover{
-                     color: black;
-                 }
-             }
-         }
-        }
-        .angle-icon{
-            margin-top: -260px;
-            @media screen and (max-width:768px){
-            margin-top: 0px;
+            @media screen and(max-width:576px){
+                width: 80%;
             }
-            button{
-                @include button(50px,50px,100%,$third-color,white,50px){
-                    outline: none;
-                    border: none;
-                    z-index: 2222;
-                }
-                @media screen and (max-width:650px){
-                    @include button(30px,30px,100%,$third-color,white,30px);
-                }
+              margin:0px 10px;
+              border-radius: 8px;
+              box-shadow: -8px 6px 15px rgba(0, 0, 0, 0.15);
+              .checked{
+                  color: orange;
+              }
+     
             }
-        }
-     }
+            .carousel-cell.is-selected {
+                background-color: $about-card-color;
+            }
+            
+            /* cell number */
+            .carousel-cell:before {
+              display: block;
+            }
+          } 
+
     }
 }
 // fourth-box-End
@@ -214,7 +171,7 @@ background-size: cover;;
         }
     .img-sec{
         width: 50%;
-        background-color: $join-us-bg;
+        background-color: $about-card-color;
         @media screen and (max-width:768px){
             width: 90%;
         background-color: transparent;
@@ -230,13 +187,14 @@ background-size: cover;;
             width:50%;
             color: white;
             button{
-                @include button(auto,50px,1000px,white,$third-color,50px){
+                @include button(auto,50px,1000px,white,$text-color,50px){
                     padding: 0px 70px;
                     border: none;
                     outline: none;
+                    background-color: $join-us-btn;
                 }
                 @media screen and(max-width:576px){
-                @include button(auto,30px,1000px,white,$third-color,30px){
+                @include button(auto,30px,1000px,white,$text-color,30px){
                     padding: 0px 50px;
                 }
                 }
@@ -250,8 +208,11 @@ background-size: cover;;
 .section-six{
     margin-top: -60px;
     z-index: 1111;
+
     .join-sec{
-        background-color: $footer-color;
+        background-color: $join-us-btn;
+    border-radius: 20px;
+
         p{
             width: 45%;
             @media screen and(max-width:576px){
@@ -287,7 +248,7 @@ background-size: cover;;
                 figure{
                     width: 20%;
                     clip-path: polygon(36% 0, 100% 0%, 100% 99%, 0% 100%);
-                    background: #B91A22;
+                    background: $second-color;
                     height: 40px;
                     @media screen and (max-width:450px) {
                         height: 30px;

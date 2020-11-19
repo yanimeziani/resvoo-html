@@ -6,7 +6,7 @@ height: 700px;
 
 // header-5-popular-button-code
 %head-btn{
-    border: 1px solid #D2495A;
+    border: 1px solid $head-input-bg;
     border-radius: 1000px;
     background-color: transparent;
     padding:5px 20px;
@@ -16,7 +16,8 @@ height: 700px;
 }
 // small heading text
 %small-txt{
-    color: $text-color;
+    color: $second-color;
     letter-spacing: 2.5px;
     font-size: 12px;
+    font-weight: bold;
 }
