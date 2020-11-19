@@ -117,14 +117,14 @@ header{
             .nav-btn-1{
                 background-color: $second-color;
                 &:hover{
-                    @include hover(white,darken($second-color,10));
+                    @include hover(white,darken($second-color,15));
 
                 }
             }
             .nav-btn-2{
                 background-color: $third-color;
                 &:hover{
-                    @include hover(white,darken($third-color,10));
+                    @include hover(white,darken($third-color,15));
                 }
             }
             .navbar-toggler{
@@ -164,6 +164,9 @@ header{
               }
      .h-service-input{
     @include head-search-input(white);
+    &:focus{
+        box-shadow: inset 1px 1px 2px black, inset -1px -1px 2px lighten($color: $primary-color, $amount: 50);
+    }
     @media screen and (max-width:992px) {
        height: 35px;
     }
@@ -173,6 +176,9 @@ header{
      }
      .h-search-input{
         @include head-search-input($head-input-bg);
+        &:focus{
+            box-shadow: inset 1px 1px 2px black, inset -1px -1px 2px lighten($color: $head-input-bg, $amount: 50);
+        }
         &::placeholder {
             color: white;
         }
@@ -232,7 +238,9 @@ header{
                         font-size: 11px;
                        }
                     &:hover{
-                        @include hover($head-input-bg,white)
+                        @include hover($head-input-bg,white);
+                            box-shadow: inset 1px 1px 2px $head-input-bg, inset -1px -1px 2px lighten($color: $head-input-bg, $amount: 50);
+                            border: none;
                     }
                 }
             

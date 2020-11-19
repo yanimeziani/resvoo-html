@@ -15,7 +15,13 @@ footer{
         list-style: none;
         li{
             font-weight: bold;
+            a{
+                text-decoration: none;
             color: #4B4B4B;
+&:hover{
+    color: $text-color;
+}
+            }
         }
     }
     form{
@@ -23,6 +29,11 @@ footer{
             color: gray;
         }
         input{
+         
+            &:focus{
+                box-shadow: inset 2px 2px 5px gray, inset -5px -5px 10px #FFF;
+                border: none;
+            }
             @include button(100%,50px,4px,transparent,gray,50px){
                 padding-left: 20px;
           outline: none;
@@ -41,6 +52,11 @@ footer{
                 text-decoration: none;
                 font-size: 20px;
                 color: $footer-icon;
+                &:hover{
+                    @include hover(lighten($footer-icon,100),auto){
+                        transform: scale(1.2);
+                    }
+                }
             }
         }
         small{

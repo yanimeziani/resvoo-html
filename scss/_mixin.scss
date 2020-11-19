@@ -44,6 +44,7 @@
 @mixin hover($color,$bg-color){
 color: $color;
 background-color: $bg-color;
+@content;
 }
 
 
