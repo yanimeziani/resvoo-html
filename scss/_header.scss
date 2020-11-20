@@ -25,7 +25,7 @@ header{
     .top-sec{
         @include header-div-size(100%,100%){
             position: absolute;  
-         z-index: 111;
+         z-index: 55555;
         } 
         // logo section start
         .logo-sec{
@@ -34,17 +34,7 @@ header{
             height: 30px;
             width: 100px;
            }
-           animation: move 2s linear infinite;
-           animation-direction: alternate;
-            }
-            @keyframes move {
-                from{
-                    transform: rotate(2deg);
-
-                }
-                to{
-                    transform: rotate(-2deg);
-                }
+        
             }
         }
         // logo section End
