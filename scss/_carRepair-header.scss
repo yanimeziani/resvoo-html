@@ -60,7 +60,7 @@ header{
                 }
                 @media screen and (max-width:450px) {
                     @include button(80%,30px,5px,$third-color,white,30px){
-                        font-size: 10px;
+                        font-size: 2.5vw;
                     }
                         }
             }
@@ -88,120 +88,88 @@ header{
         } 
         // top button code End
         // navbar code start
-
-  // navbar code start
-  .navbar-bg{
-    height: 60px;
-                border-radius: 8px;
-                background-color: $nav-bg;
-                z-index: 2222;
-    @media screen and(max-width:992px){
-        height: auto;
-    }
-    @media screen and(max-width:768px){
-        width: 95%;
-    }
-    .nav-manu{
-    width: 75%;
-    @media screen and(max-width:768px){
-        width: 50%;
-    }
-            nav{
-        
-                @media screen and (max-width:768px){
-                    width: 95%;
-                }
-           
-                .navbar-toggler{
-                  border: 1px solid white;
-                  color: white !important;
-                  @media screen and (max-width:992px){
-               margin-top: 10px;
-                }
-                }
-                a{
-                    font-size: 18px;
-                    color: lighten($color: #000000, $amount: 100);
-                    &:hover{
-                        @include hover($text-color,auto);
-                        }
-                    @media screen and (max-width:992px){
-                        font-size: 14px;
-                        padding:0px;
+        .navbar-bg{
+height: 60px;
+            border-radius: 8px;
+            background-color: $nav-bg;
+            z-index: 55555;
+@media screen and(max-width:992px){
+    height: auto;
+}
+@media screen and(max-width:768px){
+    width: 95%;
+}
+.nav-manu{
+width: 75%;
+@media screen and(max-width:768px){
+    width: 50%;
+}
+        nav{
+    
+            @media screen and (max-width:768px){
+                width: 95%;
+            }
+       
+            .navbar-toggler{
+              border: 1px solid white;
+              color: white !important;
+              @media screen and (max-width:992px){
+           margin-top: 10px;
+            }
+            }
+            a{
+                font-size: 18px;
+                color: lighten($color: #000000, $amount: 100);
+                &:hover{
+                    @include hover($text-color,auto);
                     }
+                @media screen and (max-width:992px){
+                    font-size: 14px;
+                    padding:0px;
                 }
             }
+        }
+}
+
+        .nav-profile{
+            width: 25%;
+            height: 60px;
+            @media screen and(max-width:768px){
+                width: 50%;
+            }
+            i{
+                color: white;
+                &:hover{
+                    @include hover($text-color,auto);
+                }
+            }
+            a{
+                color: white;
+                text-decoration: none;
+                &:hover{
+                    @include hover($text-color,auto);
+                }
+            }
+      a{
+        z-index: 2222;
+
+        img{
+            width: 40px;
+            height: 40px;
+        }
+      }
+        }
+        .dropdown-menu{
+            background-color: $nav-bg;
+            button{
+                color: white;
+                &:hover{
+                    @include hover($text-color,$nav-bg);
+                }
+            }
+        }
     }
     
-            .nav-profile{
-                width: 25%;
-                height: 60px;
-                @media screen and(max-width:992px){
-                    width: 50%;
-                }
-                @media screen and(max-width:500px){
-                    width: 80%;
-                }
-                @media screen and(max-width:350px){
-                    width: 100%;
-                }
-                button{
-                    z-index: 22222;
-                }
-                    .nav-btn{
-                @include button(100px,40px,1000px,auto,white,auto);
-                @media screen and (max-width:450px){
-                    @include button(90px,30px,1000px,auto,white,auto){
-                        font-size: 12px;
-                    }   
-                }
-            }
-            .nav-btn-1{
-                background-color: $second-color;
-                &:hover{
-                    @include hover(white,darken($second-color,15));
-
-                }
-            }
-            .nav-btn-2{
-                background-color: $third-color;
-                &:hover{
-                    @include hover(white,darken($third-color,15));
-                }
-            }
-            .model{
-                z-index: 5555;
-            }
-          
-                .modal-content{
-                    height: 400px;
-                }
-                input{
-                    @include button(270px,60px,1000px,auto,black,60px){
-                        border: 2px solid $text-color;
-                        padding-left:20px ;
-                        outline:none ;
-                    }
-             
-                }
-                .model-search{
-                    position: absolute;
-                    margin-left: -30px;
-                    line-height: 60px;
-                    color: $text-color;
-                    font-size: 20px;
-                }
-            
-         
-        }
-            
-
-      
-            }
-  
-        }
-        
-
         // navbar code End
 // head text & img code start
           .h-txt-img{
@@ -310,3 +278,4 @@ header{
 
     }
     // top section code end
+}

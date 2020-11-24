@@ -60,21 +60,28 @@ height: 450px;
             color: white;
         }
 .slider-service{
-    .carousel {
-    
-      .carousel-cell {
-        width: 25%;
-        @media screen and(max-width:992px){
-            width: 40%;
+
+    .MultiCarousel {
+        float: left;
+        overflow: hidden;
+        padding:10px 50px;
+        width: 100%;
+        position:relative;
+         }
+        .MultiCarousel .MultiCarousel-inner { 
+        transition: 1s ease all;
+         float: left; 
         }
-        @media screen and(max-width:576px){
-            width: 90%;
-        }
-    
-        margin:0px 10px;
-        border-radius: 8px;
-        box-shadow: 4px 6px 10px 1px rgba(0, 0, 0, 0.25);
-        button{
+            .MultiCarousel .MultiCarousel-inner .item {
+                 float: left;
+                }
+            .MultiCarousel .MultiCarousel-inner .item > div { 
+                text-align: center;
+                border-radius: 8px;
+                    box-shadow: 4px 6px 10px 1px rgba(0, 0, 0, 0.25);
+                    margin:0px 10px;
+        background:$slider-bg;
+            button{
             @include button(100%,80px,0px 0px 8px 8px,$slider-btn-bg,$text-color,80px){
                 font-size:18px;
                 border: none;
@@ -82,16 +89,23 @@ height: 450px;
                 margin-top: -30px;
             }
         }
-      }
-      .carousel-cell.is-selected {
-        background:$slider-bg;
-      }
-      
-      /* cell number */
-      .carousel-cell:before {
-        display: block;
-      }
-    } 
+
+                }
+        .MultiCarousel .leftLst, .MultiCarousel .rightLst {
+            position:absolute;
+            border-radius:50%;
+            top:calc(50% - 20px);
+             }
+        .MultiCarousel .leftLst { left:0; }
+        .MultiCarousel .rightLst { right:0; }
+        
+            .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over {
+                pointer-events: none;
+             background-color: white;
+             color:$text-color;
+             border: none;
+             outline: none;
+                 }
 
 }
     }
@@ -121,43 +135,60 @@ background-size: cover;
         }
      }
      .about-cards{
-        .carousel {
-    margin-top: -300px;
-    @media screen and (max-width:992px){
-        margin-top: -200px;
-    }
-    z-index: 2222;
-            .carousel-cell {
-              width: 30%;
-              transform:scale(0.97);
-              @media screen and(max-width:992px){
-                width: 40%;
+        .MultiCarousel {
+         margin-top: -300px;
+         z-index: 3333;
+            float: left;
+            overflow: hidden;
+            padding:50px;
+            width: 100%;
+            position:relative;
+             }
+            .MultiCarousel .MultiCarousel-inner { 
+            transition: 1s ease all;
+             float: left; 
+             .about-hidden{
+                 visibility: hidden;
+                 @media screen and(max-width:768px){
+                     display: none;
+                 }
+             }
             }
-            @media screen and(max-width:576px){
-                width: 80%;
-            }
-              margin:0px 20px;
-              border-radius: 8px;
-              box-shadow: -8px 6px 15px rgba(0, 0, 0, 0.15);
-              .checked{
-                  color: orange;
-              }
-              &:hover{
-                  transform:scale(1);
-                  box-shadow: 8px 6px 15px rgba(0, 0, 0, 0.3);
+                .MultiCarousel .MultiCarousel-inner .item {
+                     float: left;
+                 
+                    }
+                .MultiCarousel .MultiCarousel-inner .item > div { 
+                    margin:0px 5px;
+                    background-color: $about-card-color;
+                     border-radius: 8px;
+                     box-shadow: -8px 6px 15px rgba(0, 0, 0, 0.15);
+                     transform:scale(0.97);
+                 
+                     &:hover{
+                         transform: scale(1);
+                     }
+                     .checked{
+                    color: orange;
+                    }
+               
+                    }
+            .MultiCarousel .leftLst, .MultiCarousel .rightLst {
+                position:absolute;
+                border-radius:50%;
+                top:calc(50% - 30px);
 
-              }
-     
-            }
-            .carousel-cell.is-selected {
-                background-color: $about-card-color;
-            }
+                 }
+            .MultiCarousel .leftLst { left:0; }
+            .MultiCarousel .rightLst { right:0; }
             
-            /* cell number */
-            .carousel-cell:before {
-              display: block;
-            }
-          } 
+                .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over {
+                    pointer-events: none;
+                    background-color: #F5F5F5;;
+                    color:#F5F5F5;;
+                    border: none ;
+                    outline: none ;
+                     }
 
     }
 }
