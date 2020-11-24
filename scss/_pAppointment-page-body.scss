@@ -1,0 +1,343 @@
+.profile-appointment{
+    position: relative;
+    // background-of-page-start
+.bg{
+    position: absolute;
+    width: 100%;
+    .left-side{
+        .left-bg{
+            background-image: url(../images/left-appointment-bg.png);
+            background-size: cover;
+       width: 100%;
+       min-height: 850px;
+        @media screen and(max-height:900px){
+            height: 1000px;
+        }
+        @media screen and(max-height:1000px){
+            height: 1100px;
+        }
+        @media screen and(max-height:1100px){
+            height: 1150px;
+        }
+        }
+        .left-v-line{
+            background-color: $third-color;
+        }
+    }
+}
+    // background-of-page-End
+//  visible-part-of-page-start
+.visible-part{
+    // overflow: hidden;
+    position: absolute;
+    @include size(100%,100%);
+            // logo section start
+            .logo-sec{
+                img{
+               @media screen and (max-width:450px) {
+                height: 30px;
+                width: 100px;
+               }
+            
+                }
+            }
+            // logo section End
+    
+            // top button code start
+            .top-btn{
+                width: 210px;
+                display: flex;
+                background-color: $third-color;
+                height: 40px;
+                @media screen and (max-width:450px) {
+                    height: 30px;
+                    width: 200px;
+                        }
+                        @media screen and (max-width:450px) {
+                            width: 150px;
+                                }
+                button{
+                
+                    @include button(80%,40px,5px,$third-color,white,40px){
+                        font-size: 12px;
+                        border: none;  
+                    }
+                    @media screen and (max-width:450px) {
+                        @include button(80%,30px,5px,$third-color,white,30px){
+                            font-size: 2.5vw;
+                        }
+                            }
+                }
+                figure{
+                    width: 20%;
+                    clip-path: polygon(36% 0, 100% 0%, 100% 99%, 0% 100%);
+                    background:$second-color;
+                    height: 40px;
+                    @media screen and (max-width:450px) {
+                        height: 30px;
+                            }
+                    i{
+                        line-height: 40px;
+                        margin-left: 20px;
+                        color: white;
+                        font-size: 12px;
+                        @media screen and (max-width:450px) {
+                            height: 30px;
+                            font-size: 10px;
+                            line-height: 30px;
+                            margin-left: 15px;
+                                }
+                    }
+                }
+            } 
+            // top button code End
+                    // navbar code start
+        .navbar-bg{
+            height: 60px;
+                        border-radius: 8px;
+                        background-color: $nav-bg;
+                        z-index: 55555;
+            @media screen and(max-width:992px){
+                height: auto;
+            }
+            @media screen and(max-width:768px){
+                width: 95%;
+            }
+            .nav-manu{
+            width: 75%;
+            @media screen and(max-width:768px){
+                width: 50%;
+            }
+                    nav{
+                
+                        @media screen and (max-width:768px){
+                            width: 95%;
+                        }
+                   
+                        .navbar-toggler{
+                          border: 1px solid white;
+                          color: white !important;
+                          @media screen and (max-width:992px){
+                       margin-top: 10px;
+                        }
+                        }
+                        a{
+                            font-size: 18px;
+                            color: lighten($color: #000000, $amount: 100);
+                            &:hover{
+                                @include hover($text-color,auto);
+                                }
+                            @media screen and (max-width:992px){
+                                font-size: 14px;
+                                padding:0px;
+                            }
+                        }
+                    }
+            }
+            
+                    .nav-profile{
+                        width: 25%;
+                        height: 60px;
+                        @media screen and(max-width:768px){
+                            width: 50%;
+                        }
+                        i{
+                            color: white;
+                            &:hover{
+                                @include hover($text-color,auto);
+                            }
+                        }
+                        a{
+                            color: white;
+                            text-decoration: none;
+                            &:hover{
+                                @include hover($text-color,auto);
+                            }
+                        }
+                  a{
+                    z-index: 2222;
+            
+                    img{
+                        width: 40px;
+                        height: 40px;
+                    }
+                  }
+                    }
+                    .dropdown-menu{
+                        background-color: $nav-bg;
+                        button{
+                            color: white;
+                            &:hover{
+                                @include hover($text-color,$nav-bg);
+                            }
+                        }
+                    }
+                }
+                
+                    // navbar code End
+                    // profile-info-start
+                    .profile-info{
+                        h1{
+                            color: white;
+                        }
+                        .profile{
+                      
+                            img{
+                                width: 150px;
+                                height: 150px;
+                                border-radius: 100%;
+                            }
+                            p{
+                                color: white;
+                            }
+                        }
+                        .text{
+                            p{
+                                color: white;
+                            }
+                            i{
+                                color: white;
+                            }
+                        }
+                        .appointments-card{
+                            .filter-sec{
+                                .filter{
+                                    width: 15%;
+                                    .bar,small{
+                                        color: $third-color;
+                                    }
+                                }
+                            }
+                            .card{
+                                border-radius:8px ;
+                                border-color: $gray-3;
+                                .left-card{
+                                    p,span{
+                                        color: $gray-3;
+                                    }
+                                    span{
+                                        font-weight: 500;
+                                    }
+
+                                }
+                                .right-card{
+                                    p,span{
+                                        color: $gray-3;
+                                    }
+                                    span{
+                                        font-weight: 500;
+                                    }
+                                    .cancel{
+color: $third-color;
+                                    }
+                                    .cancelled{
+
+@include button(auto,35px,1000px,$about-card-color,red,35px){
+padding: 0px 20px;
+pointer-events: none;
+text-decoration: none;
+}
+                                    }
+                                    .complete{
+                                        @include button(auto,35px,1000px,$complete-bg,$complete-color,35px){
+                                            padding: 0px 20px;
+                                            pointer-events: none;
+                                            text-decoration: none;
+                                    }
+                                    .checked{
+                                        color: orange;
+                                    }
+        
+
+                                }
+                            }
+                            .active-app{
+                                color: $third-color;
+                            }
+                        }
+                        .active-app-btn{
+                            button{
+                                @include button(auto,40px,1000px,white,$third-color,40px){
+                                    border: 1px solid $third-color;
+                                    padding: 0px 20px;
+                                }
+                            }
+                        }
+                        .past-app{
+                            color: $third-color;
+                        }
+                    
+                    }
+                    // profile-info-end
+}
+//  visible-part-of-page-start
+
+// two section start
+.section-two{
+    z-index: 1111;
+
+    .join-sec{
+        background-color: $join-us-btn;
+    border-radius: 20px;
+
+        p{
+            width: 45%;
+            @media screen and(max-width:576px){
+                width: 90%;
+            }
+            color: lighten($color: #000000, $amount: 100);
+        }
+      
+            .join-btn{
+                width: 210px;
+                display: flex;
+                background-color: $third-color;
+                height: 40px;
+                @media screen and (max-width:450px) {
+                    height: 30px;
+                    width: 200px;
+                        }
+                        @media screen and (max-width:450px) {
+                            width: 150px;
+                                }
+                button{
+                
+                    @include button(80%,40px,5px,$third-color,white,40px){
+                        font-size: 12px;
+                        border: none;  
+                    }
+                    @media screen and (max-width:450px) {
+                        @include button(80%,30px,5px,$third-color,white,30px){
+                            font-size: 2.5vw;
+                        }
+                            }
+                }
+                figure{
+                    width: 20%;
+                    clip-path: polygon(36% 0, 100% 0%, 100% 99%, 0% 100%);
+                    background: $second-color;
+                    height: 40px;
+                    @media screen and (max-width:450px) {
+                        height: 30px;
+                            }
+                    i{
+                        line-height: 40px;
+                        margin-left: 20px;
+                        color: white;
+                        font-size: 12px;
+                        @media screen and (max-width:450px) {
+                            height: 30px;
+                            font-size: 10px;
+                            line-height: 30px;
+                            margin-left: 15px;
+                                }
+                    }
+                }
+            } 
+    }
+}
+
+// two section end
+
+}
+}
