@@ -1,0 +1,11 @@
+@mixin size($width,$height){
+    width: $width;
+    height: $height;
+    @content;
+}
+// hover mixin
+@mixin hover($color,$bg-color) {
+    color: $color;
+    background-color: $bg-color;
+    @content;
+}

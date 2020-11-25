@@ -1,0 +1,127 @@
+.package-page{
+    // left-sec-code-start
+    .left-sec{
+   
+        .bg-sec{
+            @include size(94%,100%){
+                min-height: 100vh;
+            }
+            @media screen and (max-width:992px){
+                width: 100%;
+               min-height: auto;
+            }
+            .text{
+                margin-top: 4rem;
+                h1{
+                    font-size: 3rem;
+                    color: white;
+                }
+                p{
+                    font-size: 2rem;
+                    color: $gray-6;
+                    font-weight: 300;
+                }
+            }
+        }
+        .v-line{
+            @include size(6%,100%){
+                min-height: 100vh;
+                background-color: $v-line-bg;
+            }
+            @media screen and (max-width:992px){
+                display: none;
+            }
+        }
+    }
+    // left-sec-code-end
+// right-sec-code-start
+    .right-sec{
+        min-height: 100vh;
+    
+            .top-sec{
+                h1{
+                    font-size: 3.2rem;
+                    color: $third-color;
+                    @media screen and (max-width:410px){
+                     font-size: 5vw;
+
+                       }
+                }
+                .nav-profile {
+                    width: 20%;
+                    @media screen and (max-width:1200px){
+                     width: 30%;
+                    }
+                    @media screen and (max-width:575px){
+                        width: 50%;
+                       }
+                    img{
+                        @include size(40px,40px);
+                    }
+                    a{
+                        font-size: 1.4rem;
+                        color: black;
+                        &:hover{
+                            color: $third-color;
+                        }
+                    }
+                    ul{
+                        li{
+                            font-size: 1.4rem;
+              
+                        }
+                    }
+                  
+                }
+            }
+            .package-card{
+                // card-code-start
+                .card{
+                    transform: scale(0.96);
+                    &:hover{
+                        @include hover(auto,$card-bg);
+                    transform: scale(1);
+                    box-shadow: 4px 0px 12px rgba(0, 0, 0, 0.25), -4px 8px 12px rgba(0, 0, 0, 0.25);
+                    }
+                    border-radius: 8px;
+                    border: 1px solid #828282;
+                    .card-body{
+                        .card-title{
+                            font-size: 2.4rem;
+                            color: $primary-color;
+                        }
+                        .price{
+                            font-size: 2.4rem;
+                            color: $third-color;
+                            }
+                            p,small{
+                                font-size: 1.4rem;
+                            }
+                            small{
+                                color:$border-color;
+                            }
+                            button{
+                                padding: 15px 60px;
+                                border-radius: 5px;
+                                border-color: $third-color;
+                                outline: none;
+                                font-size: 1.4rem;
+                                color: $third-color;
+                                background-color: none;
+                                &:hover{
+                                    @include hover(white,$third-color){
+                                        border: none;
+                                    }
+                                }
+                            }
+                    }
+                }
+                // card-code-end
+      
+            }
+        
+ 
+    }
+// right-sec-code-end
+
+}
