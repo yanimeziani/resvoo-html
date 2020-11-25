@@ -143,6 +143,9 @@ background-size: cover;
             padding:50px;
             width: 100%;
             position:relative;
+            @media screen and(max-width:768px){
+                margin-top: -230px;
+            }
              }
             .MultiCarousel .MultiCarousel-inner { 
             transition: 1s ease all;
