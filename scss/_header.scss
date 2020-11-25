@@ -98,9 +98,7 @@ header{
     @media screen and(max-width:992px){
         height: auto;
     }
-    @media screen and(max-width:768px){
-        width: 95%;
-    }
+
     .nav-manu{
     width: 75%;
     @media screen and(max-width:768px){
@@ -152,6 +150,11 @@ header{
                 @include button(100px,40px,1000px,auto,white,auto);
                 @media screen and (max-width:450px){
                     @include button(90px,30px,1000px,auto,white,auto){
+                        font-size: 12px;
+                    }   
+                }
+                @media screen and (max-width:330px){
+                    @include button(80px,30px,1000px,auto,white,auto){
                         font-size: 12px;
                     }   
                 }
