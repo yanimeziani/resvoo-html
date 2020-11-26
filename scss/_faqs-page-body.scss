@@ -1,0 +1,413 @@
+header{
+    position: relative;
+    @include size(100%,1000px){
+        min-height: 100vh;
+    }
+
+    .head-bg{
+        position: absolute;
+    @include size(100%,1000px){
+        min-height: 100vh;
+    }
+    overflow-x: hidden;
+    @media screen and(max-width:992px){
+        min-height:470px;
+        height: 470px;
+    }
+
+
+    .bg{
+    min-height: 100vh;
+    height: 1000px;
+    @media screen and(max-width:992px){
+        min-height:470px;
+        height: 470px;
+    }
+
+    
+    }
+    .v-line{
+        background-color: $footer-icon;
+        @media screen and (max-width:992px){
+            height: 2%;
+        }
+  
+    }
+    }
+    .head-visible{
+        position: absolute;
+    @include size(100%,100vh);
+
+    // top section start
+  
+        // logo section start
+        .logo-sec{
+            img{
+           @media screen and (max-width:450px) {
+            height: 30px;
+            width: 100px;
+           }
+        
+            }
+        }
+        // logo section End
+
+        // top button code start
+        .top-btn{
+            width: 210px;
+            display: flex;
+            background-color: $third-color;
+            height: 40px;
+            @media screen and (max-width:450px) {
+                height: 30px;
+                width: 200px;
+                    }
+                    @media screen and (max-width:450px) {
+                        width: 150px;
+                            }
+            button{
+            
+                @include button(80%,40px,5px,$third-color,white,40px){
+                    font-size: 12px;
+                    border: none;  
+                }
+                @media screen and (max-width:450px) {
+                    @include button(80%,30px,5px,$third-color,white,30px){
+                        font-size: 10px;
+                    }
+                        }
+            }
+            figure{
+                width: 20%;
+                clip-path: polygon(36% 0, 100% 0%, 100% 99%, 0% 100%);
+                background:$second-color;
+                height: 40px;
+                @media screen and (max-width:450px) {
+                    height: 30px;
+                        }
+                i{
+                    line-height: 40px;
+                    margin-left: 20px;
+                    color: white;
+                    font-size: 12px;
+                    @media screen and (max-width:450px) {
+                        height: 30px;
+                        font-size: 10px;
+                        line-height: 30px;
+                        margin-left: 15px;
+                            }
+                }
+            }
+        } 
+        // top button code End
+        // navbar code start
+
+  // navbar code start
+  .navbar-bg{
+    height: 60px;
+                border-radius: 8px;
+                background-color: $nav-bg;
+                z-index: 2222;
+    @media screen and(max-width:992px){
+        height: auto;
+    }
+
+    .nav-manu{
+    width: 75%;
+    @media screen and(max-width:768px){
+        width: 50%;
+    }
+            nav{
+        
+                @media screen and (max-width:768px){
+                    width: 95%;
+                }
+           
+                .navbar-toggler{
+                  border: 1px solid white;
+                  color: white !important;
+                  @media screen and (max-width:992px){
+               margin-top: 10px;
+                }
+                }
+                a{
+                    font-size: 18px;
+                    color: lighten($color: #000000, $amount: 100);
+                    &:hover{
+                        @include hover($text-color,auto);
+                        }
+                    @media screen and (max-width:992px){
+                        font-size: 14px;
+                        padding:0px;
+                    }
+                }
+            }
+    }
+    
+            .nav-profile{
+                width: 25%;
+                height: 60px;
+                @media screen and(max-width:992px){
+                    width: 50%;
+                }
+                @media screen and(max-width:500px){
+                    width: 80%;
+                }
+                @media screen and(max-width:350px){
+                    width: 100%;
+                }
+                button{
+                    z-index: 22222;
+                }
+                    .nav-btn{
+                @include button(100px,40px,1000px,auto,white,auto);
+                @media screen and (max-width:450px){
+                    @include button(90px,30px,1000px,auto,white,auto){
+                        font-size: 12px;
+                    }   
+                }
+                @media screen and (max-width:330px){
+                    @include button(80px,30px,1000px,auto,white,auto){
+                        font-size: 12px;
+                    }   
+                }
+            }
+            .nav-btn-1{
+                background-color: $second-color;
+                &:hover{
+                    @include hover(white,darken($second-color,15));
+
+                }
+            }
+            .nav-btn-2{
+                background-color: $third-color;
+                &:hover{
+                    @include hover(white,darken($third-color,15));
+                }
+            }
+            .model{
+                z-index: 5555;
+            }
+          
+                .modal-content{
+                    height: 400px;
+                }
+                input{
+                    @include button(270px,60px,1000px,auto,black,60px){
+                        border: 2px solid $text-color;
+                        padding-left:20px ;
+                        outline:none ;
+                    }
+             
+                }
+                .model-search{
+                    position: absolute;
+                    margin-left: -30px;
+                    line-height: 60px;
+                    color: $text-color;
+                    font-size: 20px;
+                }
+            
+         
+        }
+            
+
+      
+            }
+
+            // contact-us-start
+            .faqs-sec{
+                h1,p{
+                    color: white;
+                    @media screen and(max-width:992px){
+                        color: black;
+                    }
+                }
+                .faq-area{
+                    .faq{
+                        h1{
+                            color: #000000;
+                        }
+                        
+.accordion {
+
+    .accordion-item {
+border-radius: 100px;
+background-color: $faqs-bg;
+      button[aria-expanded='true'] {
+        background-color: $primary-color;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+    }
+    button {
+      position: relative;
+      height: 60px;
+      display: block;
+      text-align: left;
+      width: 100%;
+      padding: 0px 20px;
+      color:$border-color;
+      font-size: 1.15rem;
+      font-weight: 400;
+      border: none;
+      background: none;
+      outline: none;
+      &:hover, &:focus {
+        cursor: pointer;
+        color: $text-color;
+        &::after {
+          cursor: pointer;
+          color: blue;
+          border: 1px solid blue;
+        }
+      }
+   
+      .icon {
+        display: inline-block;
+        position: absolute;
+        top: 18px;
+        right: 0;
+        margin-right: 10px;
+        width: 22px;
+        height: 22px;
+        border: 1px solid;
+        border-radius: 22px;
+        &::before {
+          display: block;
+          position: absolute;
+          content: '';
+          top: 9px;
+          left: 5px;
+          width: 10px;
+          height: 2px;
+          background: currentColor;
+        }
+        &::after {
+          display: block;
+          position: absolute;
+          content: '';
+          top: 5px;
+          left: 9px;
+          width: 2px;
+          height: 10px;
+          background: currentColor;
+        }
+      }
+    }
+    .accordion-title{
+       padding-right: 10px;
+    }
+    button[aria-expanded='true'] {
+      color: white;
+      .icon {
+        &::after {
+          width: 0;
+
+        }
+      }
+      + .accordion-content {
+        opacity: 1;
+        max-height: 9em;
+        transition: all 200ms linear;
+        will-change: opacity, max-height;
+      }
+    }
+    .accordion-content {
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: opacity 200ms linear, max-height 200ms linear;
+      will-change: opacity, max-height;
+        background-color: $join-us-btn;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      p {
+        font-size: 1rem;
+        font-weight: 300;
+        padding: 15px;
+        color: white;
+
+      }
+    }
+  }
+                    }
+                }
+
+
+            }
+            // contact-us-end
+  
+        }
+        
+
+        // navbar code End
+    }
+
+    // two section start
+.section-two{
+    margin-top: -60px;
+    z-index: 1111;
+
+    .join-sec{
+        background-color: $join-us-btn;
+    border-radius: 20px;
+
+        p{
+            width: 45%;
+            @media screen and(max-width:576px){
+                width: 90%;
+            }
+            color: lighten($color: #000000, $amount: 100);
+        }
+      
+            .join-btn{
+                width: 210px;
+                display: flex;
+                background-color: $third-color;
+                height: 40px;
+                @media screen and (max-width:450px) {
+                    height: 30px;
+                    width: 200px;
+                        }
+                        @media screen and (max-width:450px) {
+                            width: 150px;
+                                }
+                button{
+                
+                    @include button(80%,40px,5px,$third-color,white,40px){
+                        font-size: 12px;
+                        border: none;  
+                    }
+                    @media screen and (max-width:450px) {
+                        @include button(80%,30px,5px,$third-color,white,30px){
+                            font-size: 2.5vw;
+                        }
+                            }
+                }
+                figure{
+                    width: 20%;
+                    clip-path: polygon(36% 0, 100% 0%, 100% 99%, 0% 100%);
+                    background: $second-color;
+                    height: 40px;
+                    @media screen and (max-width:450px) {
+                        height: 30px;
+                            }
+                    i{
+                        line-height: 40px;
+                        margin-left: 20px;
+                        color: white;
+                        font-size: 12px;
+                        @media screen and (max-width:450px) {
+                            height: 30px;
+                            font-size: 10px;
+                            line-height: 30px;
+                            margin-left: 15px;
+                                }
+                    }
+                }
+            } 
+    }
+}
+
+// two section end
