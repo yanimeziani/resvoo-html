@@ -1,0 +1,225 @@
+// parent-div-start
+.parent-div{
+    @include size(100%,auto) {
+        border:0.1px solid transparent;
+        position: relative; 
+        z-index: 5555;
+    }
+//  child-div-start
+    .child-div{
+    @include size(30%,100%) {
+        position: absolute; 
+        top: 0;
+        z-index: -1111;
+        display: flex;
+        @media screen and (max-width:992px){
+            width: 100%;
+            height: 300px;
+            flex-direction: column;
+        }
+
+    }
+    // backgroun-code-start
+    .bg{
+        @include size(95%,100%){
+            background-image: url(../images/left-appointment-bg.png);
+        }
+        @media screen and (max-width:992px){
+         width: 100%;
+         height: 95%;
+     }
+    }
+    .v-line{
+        @include size(5%,100%){
+            background-color: $third-color;
+        }
+        @media screen and (max-width:992px){
+         width: 100%;
+         height: 5%;
+     }
+    }
+    // backgroun-code-end
+
+}
+//  child-div-End
+
+    // page-content-code-start
+            // logo section start
+            .logo-sec{
+                img{
+               @media screen and (max-width:450px) {
+                height: 30px;
+                width: 100px;
+               }
+            
+                }
+            }
+            // logo section End
+    
+            // top button code start
+            .top-btn{
+                width: 210px;
+                display: flex;
+                background-color: $third-color;
+                height: 40px;
+                @media screen and (max-width:450px) {
+                    height: 30px;
+                    width: 200px;
+                        }
+                        @media screen and (max-width:450px) {
+                            width: 150px;
+                                }
+                button{
+                
+                    @include button(80%,40px,5px,$third-color,white,40px){
+                        font-size: 12px;
+                        border: none;  
+                    }
+                    @media screen and (max-width:450px) {
+                        @include button(80%,30px,5px,$third-color,white,30px){
+                            font-size: 10px;
+                        }
+                            }
+                }
+                figure{
+                    width: 20%;
+                    clip-path: polygon(36% 0, 100% 0%, 100% 99%, 0% 100%);
+                    background:$second-color;
+                    height: 40px;
+                    @media screen and (max-width:450px) {
+                        height: 30px;
+                            }
+                    i{
+                        line-height: 40px;
+                        margin-left: 20px;
+                        color: white;
+                        font-size: 12px;
+                        @media screen and (max-width:450px) {
+                            height: 30px;
+                            font-size: 10px;
+                            line-height: 30px;
+                            margin-left: 15px;
+                                }
+                    }
+                }
+            } 
+            // top button code End
+                    // navbar code start
+        .navbar-bg{
+            height: 60px;
+                        border-radius: 8px;
+                        background-color: $nav-bg;
+                        z-index: 55555;
+            @media screen and(max-width:992px){
+                height: auto;
+            }
+            @media screen and(max-width:768px){
+                width: 95%;
+            }
+            .nav-manu{
+            width: 75%;
+            @media screen and(max-width:768px){
+                width: 50%;
+            }
+                    nav{
+                
+                        @media screen and (max-width:768px){
+                            width: 95%;
+                        }
+                   
+                        .navbar-toggler{
+                          border: 1px solid white;
+                          color: white !important;
+                          @media screen and (max-width:992px){
+                       margin-top: 10px;
+                        }
+                        }
+                        a{
+                            font-size: 18px;
+                            color: lighten($color: #000000, $amount: 100);
+                            &:hover{
+                                @include hover($text-color,auto);
+                                }
+                            @media screen and (max-width:992px){
+                                font-size: 14px;
+                                padding:0px;
+                            }
+                        }
+                    }
+            }
+            
+                    .nav-profile{
+                        width: 25%;
+                        height: 60px;
+                        @media screen and(max-width:768px){
+                            width: 50%;
+                        }
+                        i{
+                            color: white;
+                            &:hover{
+                                @include hover($text-color,auto);
+                            }
+                        }
+                        a{
+                            color: white;
+                            text-decoration: none;
+                            &:hover{
+                                @include hover($text-color,auto);
+                            }
+                        }
+                  a{
+                    z-index: 2222;
+            
+                    img{
+                        width: 40px;
+                        height: 40px;
+                    }
+                  }
+                    }
+                    .dropdown-menu{
+                        background-color: $nav-bg;
+                        button{
+                            color: white;
+                            &:hover{
+                                @include hover($text-color,$nav-bg);
+                            }
+                        }
+                    }
+                }
+// booked-appointent-successful-start
+                .booked-sucess{
+                    h1{
+                        color: white;
+                    }
+                    a{
+                        color: white;
+                        text-decoration: underline;
+                    }
+
+                }
+// booked-appointent-successful-start
+// map-section-start
+.map-sec{
+    h3{
+        color: $second-color;
+    }
+.map-data{
+    border: 1px solid $gray-3;
+    border-radius: 8px;
+ .sp-h{
+    color: $second-color;
+
+ }
+    #map {
+        height: 210px;
+        width: 100%;
+      }
+}
+}
+// map-section-end
+
+    // page-content-code-End
+
+
+}
+// parent-div-End
