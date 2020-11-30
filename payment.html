@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Book Appointment</title>
+    <title>Payment</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,11 +12,11 @@
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- custom css -->
-    <link rel="stylesheet" href="css/bookAppointment.css">
+    <link rel="stylesheet" href="css/payment.css">
   </head>
   <body>
       
-<div class="edit-profile w-100">
+<div class="payment w-100">
   <!-- background of page -->
   <div class="row bg  m-0">
 <div class="col-lg-4 left-side">
@@ -53,7 +53,6 @@
               <div class="nav-manu">
               <nav class="navbar navbar-expand-lg">
                   <div class="container-fluid ">
-                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="fa fa-bars"></span>
                     </button>
@@ -103,54 +102,55 @@
                 <!-- navbar-end -->
     </div>
   </div>
-  <div class="row  container-fluid book-appointment mt-5 mt-lg-0">
+  <div class="row  container-fluid checkout-card mt-5 mt-lg-0">
     <div class="col-md-1 "></div>
-    <!-- profile-info-section -->
-    <div class="col-lg-3 d-flex d-lg-block justify-content-md-around justify-content-between flex-column flex-sm-row  mt-5 mb-5">
-      <h2 class="mt-5 mb-sm-5 ml-5 ml-md-0">Book<br>Appointment</h2>
-      <div class="text ml-5 ml-sm-0 mt-5">
- <p><i class="fa fa-calendar mr-3"></i>Car Wash</p>
- <p><i class="fa fa-building mr-3"></i>123 Motors</p>
- <p class="w-75"><i class="fa fa-map-marker mr-3"></i>House no 579 johar Town Dubai</p>
+    <!-- checkout-section-start -->
+    <div class="col-lg-3 d-flex d-lg-block justify-content-md-around justify-content-between flex-column flex-sm-row  mt-3">
+      <h2 class="mt-5 mb-sm-5 ml-5 ml-md-0">CheckOut</h2>
+      <div class="text ml-5 ml-sm-0 mt-sm-5 mb-5">
+ <p><i class="fa fa-credit-card mr-3"></i>Credit card</p>
     </div>
     </div>
-    <!-- profile-info-section-end -->
-    <!-- change detail start -->
+       <!-- checkout-section-end -->
+    <!-- payment detail start -->
     <div class="col-lg-8 p-md-4 mt-lg-4" >
 
-      <h2 class="text-dark ml-5 ">Booking Details</h2>
+      <h2 class="text-dark ml-5 ">Payment Details</h2>
+      <div class="card-type ml-5">
+        <p>Select your card type:</p>
+        <a href=""><img src="images/visa.png" alt=""height="50px"></a>
+        <a href=""><img src="images/mastercard.png" alt=""  height="50px"></a>
+      </div>
       <div class="row">
         <div class="col-1"></div>
         <div class="col-10 mt-5">
         <form action="">
           <div class="row mb-3">
             <div class="col-sm-6 mb-1">
-              <input type="text" class="form-control" value="Jown W" placeholder="Name">
+              <input type="text" class="form-control"  placeholder="Card Holder First Name">
             </div>
             <div class="col-sm-6">
-              <input type="number" class="form-control" value="+92 81863183167" placeholder="Phone">
+              <input type="text" class="form-control"  placeholder="Card Holder Second Name">
             </div>
           </div>
           <div class="row mb-3">
-            <div class="col-sm-6 mb-1">
-              <input type="email" class="form-control" placeholder="Email" value="resvoo123@gmail.com">
+            <div class="col-12 mb-1">
+              <input type="number" class="form-control" placeholder="Card Number">
             </div>
-            <div class="col-sm-6">
-              <input type="text" class="form-control" placeholder="Service" value="CarWash">
-            </div>
+          
           </div>
           <div class="row mb-3">
             <div class="col-sm-6 mb-1">
-              <input type="date" class="form-control" placeholder="Select Date">
+              <input type="date" class="form-control" placeholder="Expiry Date">
             </div>
             <div class="col-sm-6">
-              <input type="time" class="form-control" placeholder="Select Time">
+              <input type="text" class="form-control" placeholder="CVV">
             </div>
           </div>
           <div class="row">
             <div class="col-2"></div>
             <div class="col-md-8 text-center">
-              <button class="mt-4 mb-4">confirm</button>
+              <button class="mt-4 mb-4">Checkout</button>
             </div>
             <div class="col-2"></div>
           </div>
@@ -161,9 +161,7 @@
       </div>
 
     </div>
-       <!-- change detail end -->
-
-
+          <!-- payment detail end -->
   </div>
 
 </div>
