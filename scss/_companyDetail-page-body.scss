@@ -1,0 +1,345 @@
+// parent-div-start
+.parent-div{
+    @include size(100%,auto) {
+        border:0.1px solid transparent;
+        position: relative; 
+        // z-index: 5555;
+    }
+//  child-div-start
+    .child-div{
+    @include size(30%,100%) {
+        position: absolute; 
+        top: 0;
+        z-index: -1111;
+        display: flex;
+        @media screen and (max-width:991px){
+            width: 100%;
+            height: 300px;
+            flex-direction: column;
+        }
+
+    }
+    // backgroun-code-start
+    .bg{
+        @include size(95%,100%){
+            background-image: url(../images/left-appointment-bg.png);
+        }
+        @media screen and (max-width:991px){
+         width: 100%;
+         height: 95%;
+     }
+    }
+    .v-line{
+        @include size(5%,100%){
+            background-color: $third-color;
+        }
+        @media screen and (max-width:991px){
+         width: 100%;
+         height: 5%;
+     }
+    }
+    // backgroun-code-end
+
+}
+//  child-div-End
+
+    // page-content-code-start
+            // logo section start
+            .logo-sec{
+                img{
+               @media screen and (max-width:450px) {
+                height: 30px;
+                width: 90px;
+               }
+            
+                }
+            }
+            // logo section End
+    
+            // top button code start
+            .top-btn{
+                width: 210px;
+                display: flex;
+                background-color: $third-color;
+                height: 40px;
+                @media screen and (max-width:450px) {
+                    height: 30px;
+                    width: 200px;
+                        }
+                        @media screen and (max-width:450px) {
+                            width: 150px;
+                                }
+                button{
+                
+                    @include button(80%,40px,5px,$third-color,white,40px){
+                        font-size: 12px;
+                        border: none;  
+                    }
+                    @media screen and (max-width:450px) {
+                        @include button(80%,30px,5px,$third-color,white,30px){
+                            font-size: 10px;
+                        }
+                            }
+                }
+                figure{
+                    width: 20%;
+                    clip-path: polygon(36% 0, 100% 0%, 100% 99%, 0% 100%);
+                    background:$second-color;
+                    height: 40px;
+                    @media screen and (max-width:450px) {
+                        height: 30px;
+                            }
+                    i{
+                        line-height: 40px;
+                        margin-left: 20px;
+                        color: white;
+                        font-size: 10px;
+                        @media screen and (max-width:450px) {
+                            height: 30px;
+                            font-size: 10px;
+                            line-height: 30px;
+                            margin-left: 15px;
+                                }
+                    }
+                }
+            } 
+            // top button code End
+                    // navbar code start
+        .navbar-bg{
+            height: 60px;
+                        border-radius: 8px;
+                        background-color: $nav-bg;
+                        z-index: 55555;
+            @media screen and(max-width:992px){
+                height: auto;
+            }
+            @media screen and(max-width:768px){
+                width: 95%;
+            }
+            .nav-manu{
+            width: 75%;
+            @media screen and(max-width:768px){
+                width: 30%;
+            }
+                    nav{
+                
+                        @media screen and (max-width:768px){
+                            width: 95%;
+                        }
+                   
+                        .navbar-toggler{
+                          border: 1px solid white;
+                          color: white !important;
+                          @media screen and (max-width:992px){
+                       margin-top: 10px;
+                        }
+                        }
+                        a{
+                            font-size: 18px;
+                            color: lighten($color: #000000, $amount: 100);
+                            &:hover{
+                                @include hover($text-color,auto);
+                                }
+                            @media screen and (max-width:992px){
+                                font-size: 14px;
+                                padding:0px;
+                            }
+                        }
+                    }
+            }
+            
+                    .nav-profile{
+                        width: 25%;
+                        height: 60px;
+                        @media screen and(max-width:768px){
+                            width: 70%;
+                        }
+                        i{
+                            color: white;
+                            &:hover{
+                                @include hover($text-color,auto);
+                            }
+                        }
+                        a{
+                            color: white;
+                            text-decoration: none;
+                            &:hover{
+                                @include hover($text-color,auto);
+                            }
+                        }
+                  a{
+                    z-index: 2222;
+            
+                    img{
+                        width: 40px;
+                        height: 40px;
+                    }
+                  }
+                    }
+                    .dropdown-menu{
+                        background-color: $nav-bg;
+                        button{
+                            color: white;
+                            &:hover{
+                                @include hover($text-color,$nav-bg);
+                            }
+                        }
+                    }
+                }
+// comapny-data-start
+                .company{
+                    margin-bottom: 200px;
+                    @media screen and(max-width:992px){
+                        margin-bottom: 10px;
+                    }
+               .left-company{
+                   h1,h4,p,i{
+                       color: white;
+                       @media screen and (max-width:992px){
+                           color: black;
+                       }
+                   }
+                   .checked{
+                       color: orange;
+                   }
+               }
+               .right-company{
+                   padding-left: 70px;
+                   @media screen and (max-width:992px){
+                       padding-left: 0px;
+                   }
+                   .right-btn{
+                       @media screen and(max-width:575px){
+                        margin: 0px 10px;
+                       }
+                    h1{
+                        color: darken($color: #000000, $amount: 100);
+                    }
+                    button{
+                        @include button(auto,50px,1000px,$primary-color,white,50px){
+                            padding:0px 45px;
+                            border: none;
+                            outline: none;
+                            &:hover{
+                                background-color: darken($color: $primary-color, $amount: 15);
+                            }
+                        }
+                        @media screen and(max-width:768px){
+                           height: 35px;
+                           line-height: 35px;
+                           }
+                    }
+                   }
+                   .text{
+                    @media screen and(max-width:575px){
+                        margin: 0px 10px;
+                       }
+                       h4{
+                           color: $primary-color;
+                       }
+                       p{
+                       border: 1px solid $gray-3;
+                       border-radius: 8px;
+                       }
+                   }
+                   h4{
+                       color: $primary-color;
+                   }
+                   .services{
+                    @media screen and(max-width:575px){
+                        margin: 0px 10px;
+                       }
+                       button{
+                           @include button(24%,50px,8px,$services-button-bg,$primary-color,auto){
+                               border: 1px solid $primary-color;
+                               margin: 5px 2px;
+                           }
+                           @media screen and(max-width:575px){
+                               width: 32%;
+                           }
+                           @media screen and(max-width:400px){
+                            width: 48%;
+                        }
+                       }
+                   }
+                 
+               }
+
+                }
+// comapny-data-End
+
+
+    // page-content-code-End
+
+
+}
+// parent-div-End
+
+// section-two-start
+.section-two{
+    margin-top: -60px;
+@media screen and (max-width:992px){
+    margin-top: 0px;
+}
+    .join-sec{
+        background-color: $join-us-btn;
+    border-radius: 20px;
+
+        p{
+            width: 45%;
+            @media screen and(max-width:576px){
+                width: 90%;
+            }
+            color: lighten($color: #000000, $amount: 100);
+        }
+      
+            .join-btn{
+                width: 210px;
+                display: flex;
+                background-color: $third-color;
+                height: 40px;
+                @media screen and (max-width:450px) {
+                    height: 30px;
+                    width: 200px;
+                        }
+                        @media screen and (max-width:450px) {
+                            width: 150px;
+                                }
+                button{
+                
+                    @include button(80%,40px,5px,$third-color,white,40px){
+                        font-size: 12px;
+                        border: none;  
+                    }
+                    @media screen and (max-width:450px) {
+                        @include button(80%,30px,5px,$third-color,white,30px){
+                            font-size: 2.5vw;
+                        }
+                            }
+                }
+                figure{
+                    width: 20%;
+                    clip-path: polygon(36% 0, 100% 0%, 100% 99%, 0% 100%);
+                    background: $second-color;
+                    height: 40px;
+                    @media screen and (max-width:450px) {
+                        height: 30px;
+                            }
+                    i{
+                        line-height: 40px;
+                        margin-left: 20px;
+                        color: white;
+                        font-size: 12px;
+                        @media screen and (max-width:450px) {
+                            height: 30px;
+                            font-size: 10px;
+                            line-height: 30px;
+                            margin-left: 15px;
+                                }
+                    }
+                }
+            } 
+    }
+}
+
+// section-two-End
