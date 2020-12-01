@@ -206,65 +206,89 @@
                .right-company{
                    padding-left: 70px;
                    @media screen and (max-width:992px){
-                       padding-left: 0px;
+                       padding: 0px 10px;
                    }
-                   .right-btn{
-                       @media screen and(max-width:575px){
-                        margin: 0px 10px;
+                //    review and rating section
+                   .review-rating{
+                      .review{
+                       width: 30%;
+                       @media screen and (max-width:575px){
+                           width: 100%;
                        }
-                    h1{
-                        color: darken($color: #000000, $amount: 100);
+                       span{
+                           color: $gray-3;
+                       }
+                       .checked{
+                           color: orange;
+                       }
+                      } 
+                      .rating{
+                         width: 70%;
+                         @media screen and (max-width:575px){
+                            width: 100%;
+                        }
+                         .progress-bar{
+                             background-color:$primary-color;
+                         }
+                         p{
+                             color: $gray-3;
+                         }
+                      }
+                   }
+                //    review and rating section end
+                // card-section-start
+                .card-sec{
+                    h5{
+                        color: $primary-color;
                     }
-                    button{
-                        @include button(auto,50px,1000px,$primary-color,white,50px){
-                            padding:0px 45px;
-                            border: none;
-                            outline: none;
-                            &:hover{
-                                background-color: darken($color: $primary-color, $amount: 15);
+                    .card{
+                        border-radius: 8px;
+                        .card-headd{
+                            p{
+                                color: $gray-3;
+                            }
+                            .checked{
+                                color: orange;
                             }
                         }
-                        @media screen and(max-width:768px){
-                           height: 35px;
-                           line-height: 35px;
-                           }
+                        .card-body{
+                            p{
+                                color: $gray-3;
+                            }
+                        
+                        }
+                        .card-fot{
+                            p{
+                                color: $primary-color;
+                            }
+                            a{
+                                text-decoration: none;
+                                color: $gray-3;
+                           
+                            }
+                            i{
+                                border: 1px solid gray;
+                                padding: 7px;
+                                border-radius: 100%;
+                            }
+                        }
+                      
                     }
-                   }
-                   .text{
-                    @media screen and(max-width:575px){
-                        margin: 0px 10px;
-                       }
-                       h4{
-                           color: $primary-color;
-                       }
-                       p{
-                       border: 1px solid $gray-3;
-                       border-radius: 8px;
-                       }
-                   }
-                   h4{
-                       color: $primary-color;
-                   }
-                   .services{
-                    @media screen and(max-width:575px){
-                        margin: 0px 10px;
-                       }
-                       button{
-                           @include button(24%,50px,8px,$services-button-bg,$primary-color,auto){
-                               border: 1px solid $primary-color;
-                               margin: 5px 2px;
-                           }
-                           @media screen and(max-width:575px){
-                               width: 32%;
-                           }
-                           @media screen and(max-width:400px){
-                            width: 48%;
-                        }
-                        &:hover{
-                            @include hover(white,$primary-color);
-                        }
-                       }
-                   }
+                }
+                // card-section-End
+           
+                .pagination{
+                    margin-bottom: 30px;
+                .page-link{
+                    background:gray;
+                    color: white;
+                    &:focus,:active{
+                        background-color:$second-color;
+                    }
+                 
+                }
+                }
+          
                  
                }
 
