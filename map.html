@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Profile map</title>
+    <title>Profile and Appointments</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,139 +11,130 @@
        <!-- fontAwesome -->
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-       <!-- map-script-start -->
-       <script defer
-       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBP5SxML1JkBYGJ4lOiOdr778-omNR0oI&callback=initMap">
-   </script>
-       <!-- map-script-end -->
-
+             <!-- map-script-start -->
+             <script defer
+             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBP5SxML1JkBYGJ4lOiOdr778-omNR0oI&callback=initMap">
+         </script>
+             <!-- map-script-end -->
     <!-- custom css -->
     <link rel="stylesheet" href="css/map.css">
   </head>
   <body>
-      
-<div class="profile-appointment">
-  <!-- background of page -->
-  <div class="row bg">
-<div class="col-md-4 left-side">
- <div class="row">
-  <div class="col-11 left-bg"></div>
-  <div class="col-1 left-v-line"></div>
- </div>
-</div>
-<div class="col-md-8"></div>
+<!-- parent-div-start -->
+<div class="parent-div">
+  <!-- child-div-start -->
+  <div class="child-div">
+<div class="bg"></div>
+<div class="v-line"></div>
   </div>
-  <!-- visible part of page -->
-  <div class="visible-part container-fluid">
-    <div class="row">
-  <div class="container ">
-        <!-- logo-start -->
-        <div class="container-md logo-sec d-flex justify-content-between no-gutters mt-3">
-          <img src="images/logo 1.png" alt="logo-img" class="img-fluid">
-          <div class="top-btn">
-          <button>MAKE AN APPOINTMENT</button>
-          <figure>
-            <i class="fa fa-arrow-right"></i>
-          </figure>
+  <!-- child-div-end -->
+  <!-- page-content-start -->
+    <!-- logo-start -->
+  <div class="container">
+    <div class="container logo-sec d-flex justify-content-between no-gutters mt-3">
+      <img src="images/logo 1.png" alt="logo-img" class="img-fluid">
+      <div class="top-btn">
+      <button>MAKE AN APPOINTMENT</button>
+      <figure>
+        <i class="fa fa-arrow-right"></i>
+      </figure>
+      </div>
+    </div>
+  </div>
+    <!-- logo-end -->
+
+      <!-- navbar-start -->
+    <div class="container">
+      <div class="navbar-bg container mt-4 mt-2 d-flex">
+        <!-- navbar manu start -->
+        <div class="nav-manu">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid ">
+              <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link mr-4" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mr-4" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mr-4" href="#">Our Experts</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mr-4" href="#">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mr-4" href="#">FAQs</a>
+                  </li>
+              
+                </ul>
+              </div>
+            </div>
+          </nav>
+            </div>
+        <!-- navbar manu End -->
+        <!-- navbar profile start -->
+    <div class="nav-profile d-flex justify-content-around align-items-center">
+      <a href=""><i class="fa fa-bell"></i></a>
+        <a href="">John doe</a>
+        <a href="#"  data-toggle="dropdown" aria-expanded="false">
+            <img src="images/Ellipse-profile.png" alt="" >
+        </a>
+       
+        <ul class="dropdown-menu dropdown-menu-right mt-3">
+            <li><button class="dropdown-item mt-3" type="button">Veiw appointments</button></li>
+            <li><button class="dropdown-item mt-2 mb-2" type="button">Account Setting</button></li>
+            <hr class="w-75 m-auto text-white">
+            <li><button class="dropdown-item mt-2 mb-3" type="button">Sign out</button></li>
+          </ul>
+    </div>
+        <!-- navbar profile end -->
+    
+        </div>
+         
+</div>
+ <!-- navbar-end -->
+<!-- Company-left-sec-start -->
+ <div class="company  container mt-5">
+   <div class="row">
+     <div class="col-lg-3 left-appointment  ">
+       <h1 class="mb-5">Profile</h1>
+       <div class="profile-div  text-center">
+<div class="profile text-center mb-3">
+  <img src="images/Ellipse.png" alt="" width="150px" height="150px">
+</div>
+<h4>Shane jone</h4>
+
+       </div>
+       <div class="text mt-5">
+        <p class="w-75"><i class="fa fa-envelope mr-2"></i>shane123@gmail.com</p>
+        <p class="w-75"><i class="fa fa-phone mr-2"></i>06862521076</p>
+        <p class="w-75"><i class="fa fa-home mr-2"></i>House no 12- 8 golf road G.O.R-1 Lahore </p>
+      </div>
+     </div>
+     <!-- right-sec-start -->
+     <div class="col-lg-9 right-appointment ">
+      <div>
+        <p>You Booked appointment on <span class="sp-h">Dec 07,2020 </span> | <span class="sp-h">03:45 PM</span></p>
+        <hr>
+        <div class="row ">
+          <div class="col-lg-8 ">
+           <h5>Appointment Details</h5>
+           <p class="m-0">Booked by:<span>Shane wotsen</span></p>
+           <p class="m-0">Booked id:<span>6493809</span></p>
+           <p class="m-0">Service:<span>Car wash,Repair,Print</span></p>
+          </div>
+          <div class="col-lg-4 d-flex align-items-end justify-content-end">
+            <a href=""><i class="fa fa-print"></i> Print Receipt</a>
           </div>
         </div>
       </div>
-
-        <!-- logo-End -->
-  </div>
-  <div class="row">
-    <div class="container">
-            <!-- navbar-start -->
-            <div class="navbar-bg container-md mt-lg-4 mt-2 d-flex">
-              <!-- navbar manu start -->
-              <div class="nav-manu">
-              <nav class="navbar navbar-expand-lg">
-                  <div class="container-fluid ">
-                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="fa fa-bars"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                      <ul class="navbar-nav">
-                        <li class="nav-item">
-                          <a class="nav-link mr-4" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link mr-4" href="#">Services</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link mr-4" href="#">Our Experts</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link mr-4" href="#">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link mr-4" href="#">FAQs</a>
-                        </li>
-                    
-                      </ul>
-                    </div>
-                  </div>
-                </nav>
-                  </div>
-              <!-- navbar manu End -->
-              <!-- navbar profile start -->
-          <div class="nav-profile d-flex justify-content-around align-items-center">
-            <a href=""><i class="fa fa-bell"></i></a>
-              <a href="">John doe</a>
-              <a href="#"  data-toggle="dropdown" aria-expanded="false">
-                  <img src="images/Ellipse-profile.png" alt="" >
-              </a>
-             
-              <ul class="dropdown-menu dropdown-menu-right mt-3">
-                  <li><button class="dropdown-item mt-3" type="button">Veiw appointments</button></li>
-                  <li><button class="dropdown-item mt-2 mb-2" type="button">Account Setting</button></li>
-                  <hr class="w-75 m-auto text-white">
-                  <li><button class="dropdown-item mt-2 mb-3" type="button">Sign out</button></li>
-                </ul>
-          </div>
-              <!-- navbar profile end -->
-          
-              </div>
-               
-                <!-- navbar-end -->
-    </div>
-  </div>
-  <div class="row  container-fluid profile-info">
-    <div class="col-md-1 "></div>
-    <!-- profile-info-section -->
-    <div class="col-md-3 ">
-      <h1 class="mt-5 mb-5">Profile</h1>
-      <div class="profile m-auto text-center">
-        <img src="images/Ellipse.png" alt="" >
-        <p>shane</p>
-      </div>
-      <div class="text mt-5">
-      <p class="w-75"><i class="fa fa-envelope mr-2"></i>shane123@gmail.com</p>
-      <p class="w-75"><i class="fa fa-phone mr-2"></i>06862521076</p>
-      <p class="w-75"><i class="fa fa-home mr-2"></i>House no 12- 8 golf road G.O.R-1 Lahore </p>
-    </div>
-    </div>
-    <!-- profile-info-section-end -->
-    <!-- appointments card start -->
-    <div class="col-md-8 appointments-map mt-4 ">
-<div class="container">
-  <p>You Booked appointment on <span class="sp-h">Dec 07,2020 </span> | <span class="sp-h">03:45 PM</span></p>
-  <hr>
-  <div class="row ">
-    <div class="col-lg-8 ">
-     <h5>Appointment Details</h5>
-     <p class="m-0">Booked by:<span>Shane wotsen</span></p>
-     <p class="m-0">Booked id:<span>6493809</span></p>
-     <p class="m-0">Service:<span>Car wash,Repair,Print</span></p>
-    </div>
-    <div class="col-lg-4 d-flex align-items-end justify-content-end">
-      <a href=""><i class="fa fa-print"></i> Print Receipt</a>
-    </div>
-  </div>
-</div>
-<!-- map-start -->
+      <!-- map-start -->
 <div id="map" class="mt-2"></div>
 <!-- map-end -->
 
@@ -155,15 +146,15 @@
 <hr>
 <p>Service Provider</p>
 <div class="row provider-profile">
-  <div class="col-lg-2 text-center">
+  <div class="col-2 text-center">
   <img src="images/Ellipse (1).png" alt="" width="90px" height="90px">
   </div>
-  <div class="col-lg-4">
+  <div class="col-md-4 col-11 mt-5 mt-md-0">
     <h6>Joun Doe</h6>
     <p class="m-0">+922363918689</p>
     <p class="m-0">Sandy,Australia</p>
   </div>
-  <div class="col-lg-5  d-flex align-items-start justify-content-end">
+  <div class="col-md-5 mb-5  d-flex align-items-start justify-content-end">
     <a href=""  data-toggle="modal" data-target="#ratingModal">
       <i class="fa fa-plus">&nbsp;&nbsp;Rate and Reviews</i>
     </a>
@@ -207,13 +198,19 @@
   </div>
 </div>
 
-    </div>
-    <!-- appointments card start -->
+ </div>
+     <!-- right-sec-end -->
+<!-- Company-left-sec-End -->
 
-  </div>
+  <!-- page-content-end-->
 
-  <!-- section-two-start -->
-<div class="container-fluid section-two mb-3 mt-5">
+</div>
+<!-- parent-div-End -->
+</div>
+</div>
+
+<!-- Section-two-start -->
+<div class="container-fluid section-two mb-3">
   <div class="row m-1 m-md-0">
 <div class="col-md-1 "></div>
 <div class="col-md-10 p-4 join-sec d-flex align-items-center justify-content-around flex-column flex-sm-row">
@@ -230,11 +227,12 @@
 <div class="col-md-1"></div>
   </div>
 </div>
-<!-- section-two-End -->
+<!-- Section-two-End -->
+
 
 <!-- footer start -->
-<footer class=" w-100 no-gutters container-fluid">
-  <div class="w-100 footer-manu d-flex justify-content-sm-around align-items-center flex-column flex-sm-row mb-5">
+<footer>
+  <div class="container-fluid footer-manu d-flex justify-content-sm-around align-items-center flex-column flex-sm-row mb-5">
   <!-- logo-section -->
 <div class="logo">
   <img src="images/logo 2.png" alt="" class="img-fluid">
@@ -243,7 +241,7 @@
 <hr style="width: 70%;" class="d-block d-sm-none">
 <!-- first footer manu -->
 <div class="ul-1">
-  <h6 class="ml-4">Explore Link</h6>
+  <h6>Explore Link</h6>
   <ul class="mt-4">
     <li><a href="">About</a></li>
     <li><a href="">Services</a></li>
@@ -272,7 +270,7 @@
 
 </div>
 
-<div class=" no-gutters pt-3 pb-3 footer-term d-flex align-items-center justify-content-around flex-column flex-sm-row text-center text-sm-left" >
+<div class=" pt-3 pb-3 footer-term d-flex align-items-center justify-content-around flex-column flex-sm-row text-center text-sm-left" >
   <div class="social-icon">
     <a href="#" class="fa fa-facebook"></a>
     <a href="#" class="fa fa-twitter"></a>
@@ -287,14 +285,6 @@
 
 
 <!-- footer End -->
-    </div>
-  <!-- visible part of page end -->
-
-  </div>
-
-
-
-
 
 
 
@@ -304,7 +294,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!-- map-javascript -->
+    <!-- map javascript -->
     <script src="js/map.js"></script>
   </body>
 </html>

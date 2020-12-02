@@ -1,6 +1,7 @@
 @mixin size($width,$height) {
     width: $width;
     height: $height;
+    @content;
 }
 // Button mixin
 @mixin button($width,$height,$b-radius,$b-color,$color,$l-height) {
