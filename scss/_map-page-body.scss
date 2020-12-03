@@ -1,37 +1,55 @@
-.profile-appointment{
-    position: relative;
-    // background-of-page-start
-.bg{
-    position: absolute;
-    width: 100%;
-    .left-side{
-        .left-bg{
-            background-image: url(../images/left-appointment-bg.png);
-            background-size: cover;
-       width: 100%;
-       min-height: 850px;
-        @media screen and(max-height:900px){
-            height: 950px;
+// parent-div-start
+.parent-div{
+    @include size(100%,auto) {
+        border:0.1px solid transparent;
+        position: relative; 
+        // z-index: 5555;
+    }
+//  child-div-start
+    .child-div{
+    @include size(30%,100%) {
+        position: absolute; 
+        top: 0;
+        z-index: -1111;
+        display: flex;
+        @media screen and (max-width:991px){
+            width: 100%;
+            height: 300px;
+            flex-direction: column;
         }
 
-  
+    }
+    // backgroun-code-start
+    .bg{
+        @include size(95%,100%){
+            background-image: url(../images/left-appointment-bg.png);
         }
-        .left-v-line{
+        @media screen and (max-width:991px){
+         width: 100%;
+         height: 95%;
+     }
+    }
+    .v-line{
+        @include size(5%,100%){
             background-color: $third-color;
         }
+        @media screen and (max-width:991px){
+         width: 100%;
+         height: 5%;
+     }
     }
+    // backgroun-code-end
+
 }
-    // background-of-page-End
-//  visible-part-of-page-start
-.visible-part{
-    position: absolute;
-    @include size(100%,100%);
+//  child-div-End
+
+    // page-content-code-start
             // logo section start
             .logo-sec{
                 img{
                @media screen and (max-width:450px) {
                 height: 30px;
-                width: 100px;
+                width: 90px;
                }
             
                 }
@@ -59,7 +77,7 @@
                     }
                     @media screen and (max-width:450px) {
                         @include button(80%,30px,5px,$third-color,white,30px){
-                            font-size: 2.5vw;
+                            font-size: 10px;
                         }
                             }
                 }
@@ -75,7 +93,7 @@
                         line-height: 40px;
                         margin-left: 20px;
                         color: white;
-                        font-size: 12px;
+                        font-size: 10px;
                         @media screen and (max-width:450px) {
                             height: 30px;
                             font-size: 10px;
@@ -101,7 +119,7 @@
             .nav-manu{
             width: 75%;
             @media screen and(max-width:768px){
-                width: 50%;
+                width: 30%;
             }
                     nav{
                 
@@ -134,7 +152,7 @@
                         width: 25%;
                         height: 60px;
                         @media screen and(max-width:768px){
-                            width: 50%;
+                            width: 70%;
                         }
                         i{
                             color: white;
@@ -168,68 +186,72 @@
                         }
                     }
                 }
-                
-                    // navbar code End
-                    // profile-info-start
-                    .profile-info{
-                        h1{
-                            color: white;
-                        }
-                        .profile{
-                      
-                            img{
-                                width: 150px;
-                                height: 150px;
-                                border-radius: 100%;
-                            }
-                            p{
-                                color: white;
-                            }
-                        }
-                        .text{
-                            p{
-                                color: white;
-                            }
-                            i{
-                                color: white;
-                            }
-                        }
+// comapny-data-start
+                .company{
+                    margin-bottom: 200px;
+                    @media screen and(max-width:992px){
+                        margin-bottom: 10px;
+                    }
+               .left-appointment{
+                   p,h4,i{
+                       color: white;
+                       @media screen and (max-width:992px){
+                           color: black;
+                       }
+                   }
+              
+               }
+               .right-appointment{
+                   padding-left: 70px;
+                   @media screen and (max-width:992px){
+                       padding: 0px 10px;
+                   }
+// card-code-start
+    .sp-h,a{
+        color: $primary-color;
+    }
+    .modal{
+        form{
+            button{
+                @include button(auto,auto,1000px,auto,auto,auto){
+                    border: none;
+                    outline: none;
+                }
+            }
+            .discard-btn{
+             @include button(auto,auto,1000px, #F2F2F2,$gray-3,auto);
+            }
+            .submit-btn{
+             @include button(auto,auto,1000px,$primary-color,white,auto);
+            }
+        }
+    }
+         #map {
+             height: 210px;
+             width: 100%;
+           }
+// card-code-end
+       
+          
+                 
+               }
 
-                        .appointments-map{
-                       .sp-h,a{
-                           color: $primary-color;
-                       }
-                       .modal{
-                           form{
-                               button{
-                                   @include button(auto,auto,1000px,auto,auto,auto){
-                                       border: none;
-                                       outline: none;
-                                   }
-                               }
-                               .discard-btn{
-                                @include button(auto,auto,1000px, #F2F2F2,$gray-3,auto);
-                               }
-                               .submit-btn{
-                                @include button(auto,auto,1000px,$primary-color,white,auto);
-                               }
-                           }
-                       }
-                        }
-                            #map {
-                                height: 210px;
-                                width: 100%;
-                              }
-                        
-                     
-                    // profile-info-end
+                }
+// comapny-data-End
+
+
+    // page-content-code-End
+
+
 }
-//  visible-part-of-page-start
+// parent-div-End
 
-// two section start
+// section-two-start
 .section-two{
-    z-index: 1111;
-
+    margin-top: -60px;
+@media screen and (max-width:992px){
+    margin-top: 0px;
+}
     .join-sec{
         background-color: $join-us-btn;
     border-radius: 20px;
@@ -291,7 +313,4 @@
     }
 }
 
-// two section end
-
-}
-}
+// section-two-End
