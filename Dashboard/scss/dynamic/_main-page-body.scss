@@ -1,0 +1,94 @@
+.ul-1{
+    #tab1{
+        background-color: $four-color;
+    }
+}
+.dash-right-content{
+    .edit-sec{
+        @media screen and (max-width:575px){
+            padding: 5px 30px 10px 30px;
+        }
+        // top-navbar-start
+        .top-nav{
+            @media screen and(max-width:430px){
+                flex-direction: column;
+            }
+            button{
+               @include button(auto,40px,4px,$third-color,$primary-color,40px){
+                   padding: 0px 20px;
+                   border: 1px solid $primary-color;
+                   outline: none;
+               }
+               &:hover{
+                   @include hover(white,$primary-color);
+               }
+            }
+            .profile{
+                width: 20%;
+                @media screen and(max-width:1200px){
+                    width: 40%;
+                }
+                @media screen and(max-width:550px){
+                    width: 60%;
+                }
+                @media screen and(max-width:430px){
+                    width: 100%;
+                    margin-top: 10px;
+                }
+                a{
+                    text-decoration: none;
+                    color:$dark-gray;
+                    &:hover{
+                        color: $second-color;
+                    }
+                }
+                img{
+                    border-radius: 100%;
+                }
+            }
+        }
+        // top-navbar-End
+        .text{
+            h1,p{
+                color: $dark-gray;
+            }
+        }
+// Two-card-section-start
+         .two-card-sec{
+             .card{
+                 background-color: $third-color;
+                 border-radius: 10px;
+                 p{
+                     color: $dark-gray;
+                 }
+                 span{
+                     color: $primary-color;
+                     font-size: 40px;
+                     font-weight: 600;
+                 }
+                 hr{
+                     border-top: .5px solid $primary-color;
+                 }
+                 i{
+                     color: $primary-color;
+                 }
+             }
+         }
+// Two-card-section-End
+// three-card-section-start
+.three-card-sec{
+    .card{
+        border-radius: 10px;
+        h1{
+            color: $primary-color;
+        }
+        p{
+            color: $light-white;
+        }
+        background-color: $dark-gray;
+    }
+}
+// three-card-section-End
+
+    }
+}

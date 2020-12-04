@@ -1,0 +1,111 @@
+// Dashboard-parent-div-start
+.dashboard-parent{
+    // border: 2px solid red;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    overflow-y: hidden;
+// Dashboard-side-bar-start
+    .dash-side-bar{
+        // border: 2px solid blue;
+        width: 350px;
+        min-height: 100vh;
+        display: flex;
+        overflow-x: hidden;
+        @media screen and (max-width:700px){
+                width: 150px;
+        }
+// side-bar-manu-start
+        .nav-manu{
+            // border: 1px solid black;
+            width: 95%;
+            height: 100%;
+            background-image: url(..//..//images/left-appointment-bg.png);
+            background-size: cover;
+            .logo{
+                padding: 8px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                @media screen and (max-width:700px){
+                    flex-direction: column;
+                    padding: 0px;
+                }
+                img{
+                    @media screen and (max-width:700px){
+                        margin-top: -5px;
+                    }
+                }
+                a{
+                    font-size: 40px;
+                    color: $nav-manu-color;
+                    text-decoration: none;
+                    @media screen and (max-width:700px){
+                        flex-direction: column;
+                    order: -1;
+                    font-size: 25px;
+                    margin-top: -10px;
+                    }
+                  
+                }
+            }
+
+            .ul-1{
+                li,a,i{
+                    color: $nav-manu-color;
+                    text-decoration: none;
+                    // font-size: 10px;
+                }
+               li{
+                   list-style: none;
+                   &:hover{
+                       background-color: $second-color;
+                       a,i{
+                           color: white;
+                       }
+                   }
+
+                   @media screen and (max-width:700px){
+                       height: 70px;
+                       font-size: 10px;
+                       display: flex;
+                       flex-direction: column;
+                       justify-content: center;
+                       i{
+                           margin-bottom: 5px;
+                       }
+                   }
+           
+               }
+
+            }
+            .ul-2{
+                a,i{
+                    color: white;
+                }
+            }
+         
+        }
+// side-bar-manu-End
+// verticle-line-start
+        .v-line{
+            // border: 1px solid rgb(34, 163, 131);
+            width: 5%;
+            height: 100%;  
+            background-color:$second-color; 
+        }
+// verticle-line-End
+
+    }
+// Dashboard-side-bar-End
+// Dashboard-right-part-start
+.dash-right-content{
+    // border: 2px solid yellow;
+      width: 100%;
+    height: 100%;
+}
+// Dashboard-right-part-End
+
+}
+// Dashboard-parent-div-End

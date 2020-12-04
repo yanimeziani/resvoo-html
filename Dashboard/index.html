@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Dashboard</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- fontAwsome-link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+      
+<!-- dashboard-home-page-start -->
+    <div class="dashboard-parent">
+        <!-- side-nav-bar-start -->
+        <div class="dash-side-bar" id="mySidenav">
+            <div class="nav-manu">
+                <div class="logo">
+                    <img src="images/logo 1.png" alt="" class="img-fluid" width="130px">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="close">&times;</a>
+                </div>
+
+                <ul class="mt-3 ul-1" id="ul-1">
+                   
+                 <li class="p-3 d-flex align-items-center flex-wrap" id="tab1" ><i class="fas fa-chalkboard-teacher pr-2"></i><a href="#" onclick="tab0()">Dashboard</a></li>
+
+
+                 <li class="p-3 d-flex align-items-center flex-wrap" id="tab2" ><i class="fa fa-user pr-2"></i><a href="companyProfile.html" onclick="tab1()">Profile</a></li>
+
+
+                 <li class="p-3 d-flex align-items-center flex-wrap" id="tab3" ><i class="fas fa-id-card pr-2"></i><a href="#" onclick="tab2()">Appointment</a></li>
+
+
+                 <li class="p-3 d-flex align-items-center flex-wrap" id="tab4"><i class="fa fa-group pr-2"></i><a href="#" onclick="tab3()">Employess</a></li>
+
+
+                 <li class="p-3 d-flex align-items-center flex-wrap" id="tab5"><i class="fa fa-gear pr-2"></i><a href="accountSetting.html" class="mt-1" onclick="tab4()">Account Setting</a></li>
+
+
+                 <li class="p-3 d-flex align-items-center flex-wrap" id="tab6"><i class="fa fa-envelope pr-2"></i><a href="emailBuilder.html" class="mt-1" onclick="tab5()">Email Compains</a></li>
+
+                 <li class="p-3 d-flex align-items-center flex-wrap" id="tab7"><i class="fas fa-sms pr-2"></i><a href="#" class="mt-1"  onclick="tab6()">SMS compains</a></li>
+                </ul>
+
+                <ul class="mt-5 ul-2">
+                    <li class="p-3"><i class="	fas fa-power-off pr-2"></i><a href="">LogOut</a></li> 
+                </ul>
+            </div>
+
+            <div class="v-line"></div>
+        </div>
+        <!-- side-nav-bar-End -->
+
+        <!-- dashboard right side dynamic content start -->
+
+        <div class="dash-right-content" >
+            <div class=" row  p-0 m-0">
+                <!-- open nab button start -->
+                <div class="col-sm-1 pl-3 ">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="open">&#9776;</span>
+                </div>
+                <!-- open nab button End -->
+                <!-- Editable section of dashboard start -->
+                <div class="col-sm-11 edit-sec  mb-5">
+                    <div class="row ">
+                        <!-- page-content-start -->
+                    <!-- Topnav-start -->
+
+                        <div class="col-sm-11  p-0">
+                            <div class="top-nav mt-sm-4 d-flex justify-content-between">
+                                <button>Standard</button>
+                                <div class="profile d-flex justify-content-around align-items-center">
+                                    <a href=""><i class="fa fa-bell"></i></a>
+                                    <a href="">John doe</a>
+                                    <a href="#"  data-toggle="dropdown" aria-expanded="false">
+                                        <img src="images/Ellipse (1).png" alt="" width="40px" height="4px" class="img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- Topnav-end -->
+
+                        <div class="text mt-5">
+                            <h1>Hello!</h1>
+                            <p>Its Good to see you again</p>
+                        </div>
+
+                 
+                    </div>
+                    <!-- two-card-start -->
+                    <div class="row two-card-sec ">
+                    <div class="col-sm-11 ">
+                        <div class="row">
+                            <div class="col-sm-6 col-12 p-0 pr-sm-2 ">
+                                <div class="card">
+                                <div class="card-head p-2">
+                                    Total Appointments
+                                </div>
+                                <div class="card-body mt-3 mb-3 text-center">
+                                    <img src="images/increase.png" alt="" class="img-fluid" width="100px">
+                                    <p class="mt-2 "><span class="mr-2">123</span>Appointments</p>
+
+                                </div>
+                                <hr>
+                                <div class="card-foot p-2">
+                                    <p><i class="fa fa-arrow-up mr-2"></i>20% increase Today</p>
+                                </div>
+                                  </div>
+                            </div>
+                            <div class="col-sm-6 col-12 p-0 pl-sm-2  mt-3 mt-sm-0">
+                                <div class="card">
+                                    <div class="card-head p-2">
+                                        Earned Total
+                                    </div>
+                                    <div class="card-body mt-3 mb-3 text-center">
+                                        <img src="images/earnings 2.png" alt="" class="img-fluid" width="100px">
+                                        <p class="mt-2"><span class="mr-2">$123</span>Earned</p>
+    
+                                    </div>
+                                    <hr>
+                                    <div class="card-foot p-2">
+                                        <p><i class="fa fa-arrow-up mr-2"></i>20% increase Today</p>
+                                    </div>
+                                      </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-1 col-0 "></div>
+                    </div>
+                    <!-- two-card-End -->
+                    <!-- Three card start -->
+                    <div class="row three-card-sec  mt-3 mb-5">
+                        <div class="col-sm-11 ">
+                            <div class="row">
+                                <div class="col-sm-4 col-12 p-0 pr-sm-1 mt-1 ">
+                                    <div class="card text-center">
+                                        <h1 class="mt-5">17</h1>
+                                        <p class="mb-5">Appointment Today</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-12 p-0  mt-1">
+                                    <div class="card text-center">
+                                        <h1 class="mt-5">$117</h1>
+                                        <p class="mb-5">Earn Today</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-12 p-0 pl-sm-1 mt-1 ">
+                                    <div class="card text-center">
+                                        <h1 class="mt-5">171</h1>
+                                        <p class="mb-5">Total Clients</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-1 col-0 "></div>
+                    </div>
+                    <!-- Three card End -->
+                     
+                        <!-- page-content-End -->
+
+                </div>
+                <!-- Editable section of dashboard end -->
+            </div>
+        </div>
+
+        <!-- dashboard right side dynamic content End -->
+
+
+    </div>
+<!-- dashboard-home-page-End -->
+
+    
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Responsive-sideBar-javascript -->
+    <script src="js/sideBar.js"></script>
+
+  </body>
+</html>
