@@ -1,0 +1,106 @@
+.ul-1{
+    #tab5{
+        background-color: $four-color;
+    }
+}
+.dash-right-content{
+    .edit-sec{
+        @media screen and (max-width:575px){
+            padding: 5px 30px 10px 30px;
+        }
+        // top-navbar-start
+        .top-nav{
+            @media screen and(max-width:430px){
+                flex-direction: column;
+            }
+            button{
+               @include button(auto,40px,4px,$third-color,$primary-color,40px){
+                   padding: 0px 20px;
+                   border: 1px solid $primary-color;
+                   outline: none;
+               }
+               &:hover{
+                   @include hover(white,$primary-color);
+               }
+            }
+            .profile{
+                width: 20%;
+                @media screen and(max-width:1200px){
+                    width: 40%;
+                }
+                @media screen and(max-width:550px){
+                    width: 60%;
+                }
+                @media screen and(max-width:430px){
+                    width: 100%;
+                    margin-top: 10px;
+                }
+                a{
+                    text-decoration: none;
+                    color:$dark-gray;
+                    &:hover{
+                        color: $second-color;
+                    }
+                }
+            }
+        }
+        // top-navbar-End
+        .text{
+            h1{
+                color: $primary-color;
+            }
+            p{
+                color: $dark-gray;
+            }
+        }
+    //  package-card-start
+    .package-card{
+        // card-code-start
+        .card{
+            transform: scale(0.96);
+            &:hover{
+                @include hover(auto,$third-color);
+            transform: scale(1);
+            box-shadow: 4px 0px 12px rgba(0, 0, 0, 0.25), -4px 8px 12px rgba(0, 0, 0, 0.25);
+      
+            }
+            border-radius: 8px;
+            border: 1px solid #828282;
+            .card-body{
+                .card-title{
+                    color: $dark-gray;
+                }
+                .price{
+                    color: $primary-color;
+                    }
+                    p{
+                        color: $dark-gray;
+                    }
+                    small{
+                        color:gray;
+                    }
+                    button{
+                        @include button(auto,auto,5px,none,$primary-color,auto){
+                            padding: 15px 60px;
+                            border: 1px solid $primary-color;
+                        outline: none;
+                        }
+                        &:hover{
+                            @include hover(white,$primary-color){
+                                border: none;
+                            }
+                        }
+                        @media screen and (max-width:500px){
+                            padding: 10px 35px;
+                        }
+                    }
+            }
+        }
+        // card-code-end
+
+    }
+    // package-card-end
+
+
+    }
+}
