@@ -1,0 +1,149 @@
+.ul-1{
+    #tab4{
+        background-color: $four-color;
+    }
+}
+// dashboard-content-start
+.dash-right-content{
+    .edit-sec{
+        @media screen and (max-width:575px){
+            padding: 5px 30px 10px 30px;
+        }
+        // top-navbar-start
+        .top-nav{
+            @media screen and(max-width:560px){
+                flex-direction: column;
+            }
+            .search-one{
+                position: absolute;
+                line-height: 40px;
+                margin-left: 20px;
+                color: gray;
+                @media screen and (max-width:992px) {
+                line-height: 35px;
+                }
+            }
+            .h-service-input{
+                @include head-search-input(white){
+                    border: 1px solid $primary-color;
+                    width: 300px;
+                    @media screen and (max-width:930px){
+                        width: auto;
+                    }
+                }
+              
+                @media screen and (max-width:992px) {
+                   height: 35px;
+                }
+                @media screen and(max-width:560px){
+                    width: 100%;
+                }
+
+               
+                 }
+
+                 .profile{
+                    width: 20%;
+                    @media screen and(max-width:1200px){
+                        width: 40%;
+                    }
+                    @media screen and(max-width:550px){
+                        width: 60%;
+                    }
+                    @media screen and(max-width:560px){
+                        width: 100%;
+                        order: -11;
+                        margin-bottom: 10px;
+                    }
+                    a{
+                        text-decoration: none;
+                        color:$dark-gray;
+                        &:hover{
+                            color: $second-color;
+                        }
+                    }
+                    img{
+                        border-radius: 100%;
+                    }
+                 
+                }
+        
+        }
+        // top-navbar-End
+        // Add-employee-btn-start
+        .add-emp{
+           @include button(auto,40px,1000px,$primary-color,white,40px) {
+padding: 0px 20px;
+border: none;
+outline: none;
+box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25);
+           }
+           &:hover{
+               background-color: darken($color: $primary-color, $amount: 15);
+           }
+           @media screen and (max-width:768px){
+               height: 35px;
+               line-height: 35px;
+           }
+          
+        }
+        // Add-employee-btn-End
+        // employess-images-start
+        .emp-pic{
+            .card{
+                border-radius: 8px;
+                width: 32%;
+                border: 1px solid $border-color;
+                @media screen and (max-width:992px){
+                    width: 48%;
+                }
+                @media screen and (max-width:575px){
+                    width: 100%;
+                }
+                .card-head{
+                    .emp-img{
+                        border-radius: 8px;
+                    }
+                    .emp-edit{
+                        position: absolute;
+                        top: 0;
+                        margin-left: 190px;
+                        padding-top: 10px;
+                        @media screen and (max-width:1140px){
+                            margin-left: 10px;
+
+                        }
+                      a{
+                          text-decoration: none;
+                      }
+                        i{
+                          margin: 1px 0px;
+                         background-color: $second-color;
+                            border-radius: 100%;
+                            width: 30px;
+                            height: 30px;
+                            font-size: 15px;
+                            color: white;
+                            padding: 7px;
+                            &:hover{
+                                background-color: darken($color: $second-color, $amount: 15);
+                            }
+                        }
+                    }
+                }
+                .card-foot{
+                    p{
+                        color: $second-color;
+                    }
+                }
+
+            }
+        }
+        // employess-images-End
+
+
+        
+
+
+    }
+}

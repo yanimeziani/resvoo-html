@@ -15,3 +15,18 @@
     background-color: $bg-color;
     @content;
     }
+
+    // Header-search-input
+@mixin head-search-input($color){
+    height: 40px;
+    outline: none;
+    border-radius: 1000px;
+    @if $color==white {
+        padding-left: 50px;
+    background-color: $color;
+    }@else if $color==$head-input-bg{
+        padding-left: 20px;
+    background-color: $color;
+    }
+    @content;
+}
