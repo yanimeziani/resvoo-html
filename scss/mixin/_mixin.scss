@@ -1,10 +1,15 @@
-// size mixin
+// header-div-size-mixin
+@mixin header-div-size($width,$height) {
+    width: $width;
+    height: $height;
+    @content;
+}
+// width-height
 @mixin size($width,$height) {
     width: $width;
     height: $height;
     @content;
 }
-
 // Button mixin
 @mixin button($width,$height,$b-radius,$b-color,$color,$l-height) {
     width: $width;
@@ -47,4 +52,5 @@ color: $color;
 background-color: $bg-color;
 @content;
 }
+
 

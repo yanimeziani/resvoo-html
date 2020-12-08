@@ -1,6 +1,6 @@
-@import "services-variable";
-@import "home-common";
-@import "services-mixin";
-@import "services-header";
-@import "services-page-body";
-@import "footer";
+@import "variable/services-variable";
+@import "common/home-common";
+@import "mixin/mixin";
+@import "header/services-header";
+@import "page-body/services-page-body";
+@import "footer/footer";
