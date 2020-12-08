@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Appointments</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- fontAwsome-link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/appointments.css">
+</head>
+
+<body>
+
+    <!-- dashboard-home-page-start -->
+    <div class="dashboard-parent">
+        <!-- side-nav-bar-start -->
+        <div class="dash-side-bar" id="mySidenav">
+            <div class="nav-manu">
+                <div class="logo">
+                    <img src="images/logo 1.png" alt="" class="img-fluid" width="130px">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="close">&times;</a>
+                </div>
+
+                <ul class="mt-3 ul-1" id="ul-1">
+
+                    <li class="p-3 d-flex align-items-center flex-wrap" id="tab1"><i
+                            class="fas fa-chalkboard-teacher pr-2"></i><a href="index.html"
+                            onclick="tab0()">Dashboard</a></li>
+
+
+                    <li class="p-3 d-flex align-items-center flex-wrap" id="tab2"><i class="fa fa-user pr-2"></i><a
+                            href="companyProfile.html" onclick="tab1()">Profile</a></li>
+
+
+                    <li class="p-3 d-flex align-items-center flex-wrap" id="tab3"><i class="fas fa-id-card pr-2"></i><a
+                            href="#" onclick="tab2()">Appointment</a></li>
+
+
+                    <li class="p-3 d-flex align-items-center flex-wrap" id="tab4"><i class="fa fa-group pr-2"></i><a
+                            href="employess.html" onclick="tab3()">Employess</a></li>
+
+
+                    <li class="p-3 d-flex align-items-center flex-wrap" id="tab5"><i class="fa fa-gear pr-2"></i><a
+                            href="accountSetting.html" class="mt-1" onclick="tab4()">Account Setting</a></li>
+
+
+                    <li class="p-3 d-flex align-items-center flex-wrap" id="tab6"><i class="fa fa-envelope pr-2"></i><a
+                            href="emailBuilder.html" class="mt-1" onclick="tab5()">Email Compains</a></li>
+
+                    <li class="p-3 d-flex align-items-center flex-wrap" id="tab7"><i class="fas fa-sms pr-2"></i><a
+                            href="#" class="mt-1" onclick="tab6()">SMS compains</a></li>
+                </ul>
+
+                <ul class="mt-5 ul-2">
+                    <li class="p-3"><i class="	fas fa-power-off pr-2"></i><a href="">LogOut</a></li>
+                </ul>
+            </div>
+
+            <div class="v-line"></div>
+        </div>
+        <!-- side-nav-bar-End -->
+
+        <!-- dashboard right side dynamic content start -->
+
+        <div class="dash-right-content">
+            <div class=" row  p-0 m-0">
+                <!-- open nab button start -->
+                <div class="col-sm-1 pl-3 ">
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="open">&#9776;</span>
+                </div>
+                <!-- open nab button End -->
+                <!-- Editable section of dashboard start -->
+                <div class="col-sm-11 edit-sec  mb-5">
+                    <div class="row ">
+                        <!-- page-content-start -->
+                        <!-- Topnav-start -->
+
+                        <div class="col-sm-11 p-0">
+                            <div class="top-nav mt-sm-4 d-flex justify-content-between">
+                                <div class="left-btn mb-2">
+                                    <button class="direction-icon"><i class="	fa fa-angle-left"></i></button>
+                                    <button class="center-btn">nov 24 - nov 28. 2019 </button>
+                                    <button class="direction-icon"><i class="	fa fa-angle-right"></i></button>
+                                </div>
+                                <div class="right-btn">
+                                    <button><i class="fa fa-bell mr-3"></i>Request Approved</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- Topnav-end -->
+
+
+
+                    </div>
+
+
+                    <!-- chart-sec-start -->
+                    <div class="row chart-sec mt-5 pr-2">
+                        <div class="col-1 time-nav text-center">
+                            <i class="fa fa-clock mb-5 mt-3"></i>
+                            <p>9.00AM</p>
+                            <p>10.00AM</p>
+                            <p>11.00AM</p>
+                            <p>12.00AM</p>
+                            <p>1.00PM</p>
+                            <p>2.00PM</p>
+                            <p>3.00PM</p>
+                            <p>4.00PM</p>
+
+                        </div>
+                        <div class="col-11 p-0 pl-1">
+                            <div class="date-nav">
+                                <table border="1" class="w-100">
+                                    <thead>
+                                        <tr class="text-center">
+                                            <td>24 Mon</td>
+                                            <td>25 Tue</td>
+                                            <td>26 Wed</td>
+                                            <td>27 Thu</td>
+                                            <td>28 Fri</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="row-1">
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="row-2 common-row">
+                                            <td>
+                                                <!-- card-start -->
+                                                <div class="card d-flex p-1 flex-column justify-content-between">
+                                                    <div>
+                                                        <h6 class="m-0">Willy</h6>
+                                                        <p class="m-0">car wash</p>
+                                                        <a href="" data-toggle="modal" data-target="#asigntaskModal">+
+                                                            asign task</a>
+                                                    </div>
+                                                    <div>
+                                                        <p><i class="fa fa-clock mr-2"></i>9:00AM to 10:00AM</p>
+
+                                                    </div>
+                                                </div>
+                                                <!-- card-End -->
+                                                <!-- modal-start -->
+                                                <!-- Button trigger modal -->
+
+
+                                                <!-- Modal -->
+                                                <div class="modal fade " id="asigntaskModal" tabindex="-1"
+                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered m-auto">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">Assign
+                                                                    Task to</h5>
+                                                                <button type="button" class="close" data-dismiss="modal"
+                                                                    aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="dropdown mt-5 mb-5">
+                                                                    <button
+                                                                        class="btn d-flex justify-content-between align-items-center dropdown-toggle"
+                                                                        type="button" id="dropdownMenuButton"
+                                                                        data-toggle="dropdown" aria-haspopup="true"
+                                                                        aria-expanded="false">
+                                                                        Employee
+                                                                    </button>
+                                                                    <div class="dropdown-menu dropdown-menu-right"
+                                                                        aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#">Employee 1</a>
+                                                                        <a class="dropdown-item" href="#">Employee 2</a>
+                                                                        <a class="dropdown-item" href="#">Employee 3</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-foot mt-5 mb-5 text-center w-100">
+                                                                <button>Confarm</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- modal-End -->
+                                            </td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="row-3 common-row">
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="row-4 common-row">
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="row-5 common-row">
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="row-6 common-row">
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="row-7 common-row">
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="row-8 common-row">
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="row-9 common-row">
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- chart-sec-start -->
+
+
+                    <!-- page-content-End -->
+
+                </div>
+
+
+                <!-- Editable section of dashboard end -->
+            </div>
+        </div>
+
+        <!-- dashboard right side dynamic content End -->
+
+
+    </div>
+    <!-- dashboard-home-page-End -->
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- Responsive-sideBar-javascript -->
+    <script src="js/sideBar.js"></script>
+
+</body>
+
+</html>
